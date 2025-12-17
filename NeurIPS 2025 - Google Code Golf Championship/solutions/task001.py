@@ -1,0 +1,1 @@
+def p(g):h=len(g);w=len(g[0]);return[[[0,g[R%h][C%w]][g[R//h][C//w]>0]for C in range(w*w)]for R in range(h*h)]

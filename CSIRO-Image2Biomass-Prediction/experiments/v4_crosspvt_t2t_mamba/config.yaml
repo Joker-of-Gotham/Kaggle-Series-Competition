@@ -1,0 +1,86 @@
+{
+  "seed": 42,
+  "data_path": "/home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/csiro-biomass",
+  "train_csv_path": "/home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/csiro-biomass/train.csv",
+  "image_dir": "/home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/csiro-biomass/train",
+  "experiment_dir": "/home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/experiments/v4_crosspvt_t2t_mamba",
+  "n_splits": 5,
+  "stratify_col": "Dry_Total_g",
+  "stratify_bins": 10,
+  "epochs": 60,
+  "freeze_epochs": 5,
+  "batch_size": 4,
+  "num_workers": 4,
+  "grad_accum": 3,
+  "lr_backbone": 1e-05,
+  "lr_head": 0.0001,
+  "weight_decay": 0.05,
+  "mixed_precision": true,
+  "dropout": 0.1,
+  "hidden_ratio": 0.35,
+  "dino_candidates": [
+    "vit_base_patch14_dinov2",
+    "vit_base_patch14_reg4_dinov2",
+    "vit_small_patch14_dinov2"
+  ],
+  "small_grid": [
+    4,
+    4
+  ],
+  "big_grid": [
+    2,
+    2
+  ],
+  "t2t_depth": 2,
+  "cross_layers": 2,
+  "cross_heads": 6,
+  "pyramid_dims": [
+    384,
+    512,
+    640
+  ],
+  "mobilevit_heads": 4,
+  "mobilevit_depth": 2,
+  "sra_heads": 8,
+  "sra_ratio": 2,
+  "mamba_depth": 3,
+  "mamba_kernel": 5,
+  "aux_head": true,
+  "aux_loss_weight": 0.4,
+  "TRAIN_TARGET_COLS": [
+    "Dry_Total_g",
+    "GDM_g",
+    "Dry_Green_g"
+  ],
+  "ALL_TARGET_COLS": [
+    "Dry_Green_g",
+    "Dry_Dead_g",
+    "Dry_Clover_g",
+    "GDM_g",
+    "Dry_Total_g"
+  ],
+  "METRIC_WEIGHTS": {
+    "Dry_Green_g": 0.1,
+    "Dry_Dead_g": 0.1,
+    "Dry_Clover_g": 0.1,
+    "GDM_g": 0.2,
+    "Dry_Total_g": 0.5
+  },
+  "use_pairwise": true,
+  "lambda_pair_rank": 0.2,
+  "lambda_pair_diff": 0.1,
+  "pair_margin": 5.0,
+  "p_cutmix": 0.0,
+  "p_fmix": 0.0,
+  "p_fda": 0.0,
+  "fmix_alpha": 1.0,
+  "fmix_decay": 3.0,
+  "fda_beta": 0.02,
+  "project": "csiro-img2biomass",
+  "experiment_name": "v4_crosspvt_t2t_mamba",
+  "comment": "",
+  "log_image_every": 1,
+  "log_image_limit": 2,
+  "save_history_csv": true,
+  "git_commit": "113ec58f7158ba4c3263d0246624307492ced81b"
+}

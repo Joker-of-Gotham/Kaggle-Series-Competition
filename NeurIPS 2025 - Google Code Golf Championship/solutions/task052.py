@@ -1,0 +1,1 @@
+p=lambda j:[[5]*3 if len(set(r))==1 else[0]*3 for r in j]

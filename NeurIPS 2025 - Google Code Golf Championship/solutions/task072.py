@@ -1,0 +1,1 @@
+p=lambda g:[[3 if g[i][j]+g[i+7][j]==2 else 0 for j in range(5)]for i in range(6)]

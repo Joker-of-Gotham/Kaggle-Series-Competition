@@ -1,0 +1,1 @@
+p=lambda g:[[3 if g[i][j]==0 and g[i+5][j]==0 else 0 for j in range(4)]for i in range(4)]

@@ -1,0 +1,1 @@
+p=lambda j:[E*2 for E in j]

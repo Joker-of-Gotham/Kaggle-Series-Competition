@@ -13,6 +13,12 @@ MABe-mouse-behavior-detection/reports/
 MAP-Charting_Student_Math_Misunderstandings/data/
 NeurIPS 2025 - Google Code Golf Championship/data/
 CAFA 6 Protein Function Prediction/cafa6_data/
+CSIRO-Image2Biomass-Prediction/image-processor/edge_images
+CSIRO-Image2Biomass-Prediction/image-processor/masked_images
+CSIRO-Image2Biomass-Prediction/image-processor/masks
+CSIRO-Image2Biomass-Prediction/image-processor/models
+CSIRO-Image2Biomass-Prediction/image-processor/pca_processed
+CSIRO-Image2Biomass-Prediction/image-processor/preprocessed_images
 
 # 模型检查点与大模型文件
 *.pt

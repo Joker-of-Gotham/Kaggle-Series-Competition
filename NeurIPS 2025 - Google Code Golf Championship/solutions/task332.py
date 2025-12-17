@@ -1,0 +1,1 @@
+p=lambda g:[[3 if g[i][j]==5 and(len(g[0])-1-j)%2==0 else g[i][j]for j in range(len(g[0]))]for i in range(3)]
