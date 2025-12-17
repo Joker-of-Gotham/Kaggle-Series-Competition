@@ -3,6 +3,8 @@
 **/feats/
 **/reports/
 **/cafa6_data/
+**/cafa6_data/
+**/csiro-biomass
 
 # 已知竞赛数据路径（方便查阅）
 MABe-mouse-behavior-detection/feats/
@@ -10,7 +12,6 @@ MABe-mouse-behavior-detection/data/
 MABe-mouse-behavior-detection/reports/
 MAP-Charting_Student_Math_Misunderstandings/data/
 NeurIPS 2025 - Google Code Golf Championship/data/
-MITSUI&CO. Commodity Prediction Challenge/data/
 CAFA 6 Protein Function Prediction/cafa6_data/
 
 # 模型检查点与大模型文件
