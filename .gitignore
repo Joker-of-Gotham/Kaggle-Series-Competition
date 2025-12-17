@@ -1,0 +1,48 @@
+# 通用大体量数据目录
+**/data/
+**/feats/
+**/reports/
+**/cafa6_data/
+
+# 已知竞赛数据路径（方便查阅）
+MABe-mouse-behavior-detection/feats/
+MABe-mouse-behavior-detection/data/
+MABe-mouse-behavior-detection/reports/
+MAP-Charting_Student_Math_Misunderstandings/data/
+NeurIPS 2025 - Google Code Golf Championship/data/
+MITSUI&CO. Commodity Prediction Challenge/data/
+CAFA 6 Protein Function Prediction/cafa6_data/
+
+# 模型检查点与大模型文件
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pb
+*.safetensors
+
+# 常见大文件格式
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.npz
+*.h5
+*.hdf5
+*.csv.gz
+*.tsv
+*.jsonl
+*.ndjson
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.bz2
+*.xz
+
+# 如需保留小样本，可在需要时取消注释
+# !**/data/sample*/
+# !**/data/demo*/
