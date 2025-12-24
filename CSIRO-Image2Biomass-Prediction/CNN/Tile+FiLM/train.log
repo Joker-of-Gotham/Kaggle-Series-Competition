@@ -1,0 +1,589 @@
+[2025-12-18 08:56:31] INFO - ✅ 使用 CNN 主干: convnext_base.fb_in22k_ft_in1k | feat_dim=1024 | input_res=224
+[2025-12-18 08:59:39] INFO - 配置已写入 /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/Tile+FiLM/config.json
+[2025-12-18 08:59:39] INFO - ================================================================================
+[2025-12-18 08:59:39] INFO - === 启动 CNN Tile+FiLM 训练 ===
+[2025-12-18 08:59:39] INFO - 设备: cuda, 混合精度: True
+[2025-12-18 08:59:39] INFO - 实验目录: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/Tile+FiLM
+[2025-12-18 08:59:39] INFO - 主干候选: ('convnext_base.fb_in22k_ft_in1k', 'convnext_small.fb_in22k_ft_in1k', 'efficientnetv2_rw_m.agc_in1k', 'efficientnetv2_rw_s.ra2_in1k', 'efficientnet_b4.ra2_in1k', 'resnet50.a1_in1k')
+[2025-12-18 08:59:39] INFO - Tile Grid: (2, 2), Input Size: 384
+[2025-12-18 08:59:39] INFO - ================================================================================
+[2025-12-18 08:59:39] INFO - 数据样本: 357
+[2025-12-18 08:59:39] INFO - 训练配置: Folds=[0, 1, 2, 3, 4], Resume Mode=auto
+[2025-12-18 08:59:39] INFO - ================================================================================
+[2025-12-18 08:59:39] INFO - 开始训练 Fold 0/4
+[2025-12-18 08:59:39] INFO - ================================================================================
+[2025-12-18 08:59:39] INFO - [Fold 0] Train: 285, Valid: 72
+[2025-12-18 08:59:43] INFO - ✅ 使用 CNN 主干: convnext_base.fb_in22k_ft_in1k | feat_dim=1024 | input_res=224
+[2025-12-18 08:59:43] INFO - [Fold 0] 模型: convnext_base.fb_in22k_ft_in1k
+[2025-12-18 08:59:43] INFO - [Fold 0] Params: total=93.74M, trainable=93.74M
+[2025-12-18 08:59:43] INFO - [Fold 0] Input size: 224x224, Grid: (2, 2)
+[2025-12-18 08:59:43] INFO - [Fold 0] 使用多GPU训练: 2 x GPUs
+[2025-12-18 08:59:45] INFO - [Fold 0] SwanLab run_id: oqhf5jtuip851915n7k0y
+[2025-12-18 08:59:45] INFO - [Fold 0] 开始训练，起始 epoch=1, stage=1
+[2025-12-18 09:01:39] INFO - [Fold 0] Epoch 1/80 | Stage 1 | TrainLoss 23.0891 | ValLoss 18.4383 | WR2 -0.1871 | R2_total -0.225 | R2_gdm -0.229 | LR 5.00e-04
+[2025-12-18 09:01:40] INFO - [Fold 0] ✓ 新的最佳 WR2: -0.1871 (Epoch 1)
+[2025-12-18 09:01:40] INFO - [Fold 0] ✓ 新的最佳 Loss: 18.4383 (Epoch 1)
+[2025-12-18 09:03:33] INFO - [Fold 0] Epoch 2/80 | Stage 1 | TrainLoss 13.9514 | ValLoss 15.1144 | WR2 0.2516 | R2_total 0.337 | R2_gdm 0.330 | LR 5.00e-04
+[2025-12-18 09:03:34] INFO - [Fold 0] ✓ 新的最佳 WR2: 0.2516 (Epoch 2)
+[2025-12-18 09:03:35] INFO - [Fold 0] ✓ 新的最佳 Loss: 15.1144 (Epoch 2)
+[2025-12-18 09:05:27] INFO - [Fold 0] Epoch 3/80 | Stage 1 | TrainLoss 11.6966 | ValLoss 12.9801 | WR2 0.3260 | R2_total 0.447 | R2_gdm 0.374 | LR 5.00e-04
+[2025-12-18 09:05:28] INFO - [Fold 0] ✓ 新的最佳 WR2: 0.3260 (Epoch 3)
+[2025-12-18 09:05:29] INFO - [Fold 0] ✓ 新的最佳 Loss: 12.9801 (Epoch 3)
+[2025-12-18 09:07:21] INFO - [Fold 0] Epoch 4/80 | Stage 1 | TrainLoss 10.8807 | ValLoss 12.4636 | WR2 0.3227 | R2_total 0.418 | R2_gdm 0.411 | LR 5.00e-04
+[2025-12-18 09:07:23] INFO - [Fold 0] ✓ 新的最佳 Loss: 12.4636 (Epoch 4)
+[2025-12-18 09:09:16] INFO - [Fold 0] Epoch 5/80 | Stage 1 | TrainLoss 10.7932 | ValLoss 13.0000 | WR2 0.2323 | R2_total 0.305 | R2_gdm 0.302 | LR 5.00e-04
+[2025-12-18 09:11:10] INFO - [Fold 0] Epoch 6/80 | Stage 1 | TrainLoss 10.9581 | ValLoss 12.4331 | WR2 0.3640 | R2_total 0.482 | R2_gdm 0.440 | LR 5.00e-04
+[2025-12-18 09:11:11] INFO - [Fold 0] ✓ 新的最佳 WR2: 0.3640 (Epoch 6)
+[2025-12-18 09:11:12] INFO - [Fold 0] ✓ 新的最佳 Loss: 12.4331 (Epoch 6)
+[2025-12-18 09:13:05] INFO - [Fold 0] Epoch 7/80 | Stage 1 | TrainLoss 10.3008 | ValLoss 12.4235 | WR2 0.3352 | R2_total 0.452 | R2_gdm 0.410 | LR 5.00e-04
+[2025-12-18 09:13:07] INFO - [Fold 0] ✓ 新的最佳 Loss: 12.4235 (Epoch 7)
+[2025-12-18 09:15:00] INFO - [Fold 0] Epoch 8/80 | Stage 1 | TrainLoss 9.3175 | ValLoss 12.4548 | WR2 0.3158 | R2_total 0.405 | R2_gdm 0.389 | LR 5.00e-04
+[2025-12-18 09:16:53] INFO - [Fold 0] Epoch 9/80 | Stage 1 | TrainLoss 9.7654 | ValLoss 12.5424 | WR2 0.3846 | R2_total 0.492 | R2_gdm 0.453 | LR 5.00e-04
+[2025-12-18 09:16:55] INFO - [Fold 0] ✓ 新的最佳 WR2: 0.3846 (Epoch 9)
+[2025-12-18 09:18:47] INFO - [Fold 0] Epoch 10/80 | Stage 1 | TrainLoss 8.8354 | ValLoss 11.8676 | WR2 0.3508 | R2_total 0.458 | R2_gdm 0.395 | LR 5.00e-04
+[2025-12-18 09:18:48] INFO - [Fold 0] ✓ 新的最佳 Loss: 11.8676 (Epoch 10)
+[2025-12-18 09:20:40] INFO - [Fold 0] Epoch 11/80 | Stage 1 | TrainLoss 9.5245 | ValLoss 11.5503 | WR2 0.3683 | R2_total 0.465 | R2_gdm 0.445 | LR 5.00e-04
+[2025-12-18 09:20:42] INFO - [Fold 0] ✓ 新的最佳 Loss: 11.5503 (Epoch 11)
+[2025-12-18 09:22:35] INFO - [Fold 0] Epoch 12/80 | Stage 1 | TrainLoss 8.3955 | ValLoss 12.7285 | WR2 0.3411 | R2_total 0.452 | R2_gdm 0.427 | LR 5.00e-04
+[2025-12-18 09:24:29] INFO - [Fold 0] Epoch 13/80 | Stage 1 | TrainLoss 8.8519 | ValLoss 12.6801 | WR2 0.3826 | R2_total 0.492 | R2_gdm 0.464 | LR 5.00e-04
+[2025-12-18 09:26:23] INFO - [Fold 0] Epoch 14/80 | Stage 1 | TrainLoss 8.7652 | ValLoss 13.5950 | WR2 0.2826 | R2_total 0.375 | R2_gdm 0.352 | LR 5.00e-04
+[2025-12-18 09:28:16] INFO - [Fold 0] Epoch 15/80 | Stage 1 | TrainLoss 10.0212 | ValLoss 11.1007 | WR2 0.4072 | R2_total 0.541 | R2_gdm 0.466 | LR 5.00e-04
+[2025-12-18 09:28:18] INFO - [Fold 0] ✓ 新的最佳 WR2: 0.4072 (Epoch 15)
+[2025-12-18 09:28:18] INFO - [Fold 0] ✓ 新的最佳 Loss: 11.1007 (Epoch 15)
+[2025-12-18 09:30:11] INFO - [Fold 0] Epoch 16/80 | Stage 1 | TrainLoss 8.3029 | ValLoss 11.4882 | WR2 0.3868 | R2_total 0.478 | R2_gdm 0.489 | LR 5.00e-04
+[2025-12-18 09:32:05] INFO - [Fold 0] Epoch 17/80 | Stage 1 | TrainLoss 10.7203 | ValLoss 11.5056 | WR2 0.4143 | R2_total 0.523 | R2_gdm 0.509 | LR 5.00e-04
+[2025-12-18 09:32:06] INFO - [Fold 0] ✓ 新的最佳 WR2: 0.4143 (Epoch 17)
+[2025-12-18 09:34:00] INFO - [Fold 0] Epoch 18/80 | Stage 1 | TrainLoss 9.1111 | ValLoss 12.2281 | WR2 0.3282 | R2_total 0.428 | R2_gdm 0.411 | LR 5.00e-04
+[2025-12-18 09:35:54] INFO - [Fold 0] Epoch 19/80 | Stage 1 | TrainLoss 7.4660 | ValLoss 12.6476 | WR2 0.2878 | R2_total 0.326 | R2_gdm 0.387 | LR 5.00e-04
+[2025-12-18 09:37:48] INFO - [Fold 0] Epoch 20/80 | Stage 1 | TrainLoss 8.6301 | ValLoss 12.9278 | WR2 0.3897 | R2_total 0.471 | R2_gdm 0.466 | LR 5.00e-04
+[2025-12-18 09:37:48] INFO - [Fold 0] 进入 Stage 2（解冻主干）
+[2025-12-18 09:40:03] INFO - [Fold 0] Epoch 21/80 | Stage 2 | TrainLoss 7.3453 | ValLoss 11.6996 | WR2 0.4375 | R2_total 0.516 | R2_gdm 0.530 | LR 9.99e-06
+[2025-12-18 09:40:06] INFO - [Fold 0] ✓ 新的最佳 WR2: 0.4375 (Epoch 21)
+[2025-12-18 09:42:13] INFO - [Fold 0] Epoch 22/80 | Stage 2 | TrainLoss 6.7521 | ValLoss 11.2737 | WR2 0.4469 | R2_total 0.523 | R2_gdm 0.547 | LR 9.98e-06
+[2025-12-18 09:42:17] INFO - [Fold 0] ✓ 新的最佳 WR2: 0.4469 (Epoch 22)
+[2025-12-18 09:44:23] INFO - [Fold 0] Epoch 23/80 | Stage 2 | TrainLoss 6.8221 | ValLoss 11.4371 | WR2 0.4515 | R2_total 0.532 | R2_gdm 0.552 | LR 9.94e-06
+[2025-12-18 09:44:27] INFO - [Fold 0] ✓ 新的最佳 WR2: 0.4515 (Epoch 23)
+[2025-12-18 09:46:36] INFO - [Fold 0] Epoch 24/80 | Stage 2 | TrainLoss 6.8733 | ValLoss 10.6881 | WR2 0.4418 | R2_total 0.516 | R2_gdm 0.546 | LR 9.90e-06
+[2025-12-18 09:46:40] INFO - [Fold 0] ✓ 新的最佳 Loss: 10.6881 (Epoch 24)
+[2025-12-18 09:48:48] INFO - [Fold 0] Epoch 25/80 | Stage 2 | TrainLoss 6.3741 | ValLoss 11.2634 | WR2 0.4587 | R2_total 0.541 | R2_gdm 0.557 | LR 9.85e-06
+[2025-12-18 09:48:52] INFO - [Fold 0] ✓ 新的最佳 WR2: 0.4587 (Epoch 25)
+[2025-12-18 09:51:00] INFO - [Fold 0] Epoch 26/80 | Stage 2 | TrainLoss 6.3807 | ValLoss 10.7824 | WR2 0.4501 | R2_total 0.527 | R2_gdm 0.553 | LR 9.78e-06
+[2025-12-18 09:53:10] INFO - [Fold 0] Epoch 27/80 | Stage 2 | TrainLoss 6.6433 | ValLoss 10.9282 | WR2 0.4308 | R2_total 0.498 | R2_gdm 0.527 | LR 9.70e-06
+[2025-12-18 09:55:20] INFO - [Fold 0] Epoch 28/80 | Stage 2 | TrainLoss 6.6304 | ValLoss 10.9910 | WR2 0.4550 | R2_total 0.535 | R2_gdm 0.557 | LR 9.61e-06
+[2025-12-18 09:57:29] INFO - [Fold 0] Epoch 29/80 | Stage 2 | TrainLoss 6.0896 | ValLoss 10.6269 | WR2 0.4674 | R2_total 0.549 | R2_gdm 0.565 | LR 9.51e-06
+[2025-12-18 09:57:33] INFO - [Fold 0] ✓ 新的最佳 WR2: 0.4674 (Epoch 29)
+[2025-12-18 09:57:35] INFO - [Fold 0] ✓ 新的最佳 Loss: 10.6269 (Epoch 29)
+[2025-12-18 09:59:42] INFO - [Fold 0] Epoch 30/80 | Stage 2 | TrainLoss 5.9945 | ValLoss 10.9115 | WR2 0.4569 | R2_total 0.538 | R2_gdm 0.553 | LR 9.40e-06
+[2025-12-18 10:01:52] INFO - [Fold 0] Epoch 31/80 | Stage 2 | TrainLoss 6.0456 | ValLoss 10.9801 | WR2 0.4523 | R2_total 0.531 | R2_gdm 0.547 | LR 9.27e-06
+[2025-12-18 10:04:01] INFO - [Fold 0] Epoch 32/80 | Stage 2 | TrainLoss 6.2169 | ValLoss 10.9426 | WR2 0.4595 | R2_total 0.538 | R2_gdm 0.554 | LR 9.14e-06
+[2025-12-18 10:06:12] INFO - [Fold 0] Epoch 33/80 | Stage 2 | TrainLoss 6.1137 | ValLoss 10.9375 | WR2 0.4527 | R2_total 0.532 | R2_gdm 0.540 | LR 9.00e-06
+[2025-12-18 10:08:21] INFO - [Fold 0] Epoch 34/80 | Stage 2 | TrainLoss 5.8152 | ValLoss 10.7004 | WR2 0.4698 | R2_total 0.553 | R2_gdm 0.570 | LR 8.84e-06
+[2025-12-18 10:08:25] INFO - [Fold 0] ✓ 新的最佳 WR2: 0.4698 (Epoch 34)
+[2025-12-18 10:10:34] INFO - [Fold 0] Epoch 35/80 | Stage 2 | TrainLoss 5.8595 | ValLoss 10.7014 | WR2 0.4633 | R2_total 0.543 | R2_gdm 0.561 | LR 8.68e-06
+[2025-12-18 10:12:44] INFO - [Fold 0] Epoch 36/80 | Stage 2 | TrainLoss 5.8830 | ValLoss 11.7350 | WR2 0.4638 | R2_total 0.546 | R2_gdm 0.563 | LR 8.51e-06
+[2025-12-18 10:14:53] INFO - [Fold 0] Epoch 37/80 | Stage 2 | TrainLoss 6.0827 | ValLoss 11.0369 | WR2 0.4393 | R2_total 0.513 | R2_gdm 0.532 | LR 8.33e-06
+[2025-12-18 10:17:04] INFO - [Fold 0] Epoch 38/80 | Stage 2 | TrainLoss 5.6355 | ValLoss 11.0325 | WR2 0.4314 | R2_total 0.503 | R2_gdm 0.520 | LR 8.15e-06
+[2025-12-18 10:19:14] INFO - [Fold 0] Epoch 39/80 | Stage 2 | TrainLoss 5.5617 | ValLoss 10.8904 | WR2 0.4521 | R2_total 0.529 | R2_gdm 0.543 | LR 7.95e-06
+[2025-12-18 10:21:23] INFO - [Fold 0] Epoch 40/80 | Stage 2 | TrainLoss 5.5262 | ValLoss 11.0302 | WR2 0.4633 | R2_total 0.543 | R2_gdm 0.559 | LR 7.75e-06
+[2025-12-18 10:23:32] INFO - [Fold 0] Epoch 41/80 | Stage 2 | TrainLoss 5.7851 | ValLoss 10.8626 | WR2 0.4567 | R2_total 0.533 | R2_gdm 0.548 | LR 7.54e-06
+[2025-12-18 10:25:44] INFO - [Fold 0] Epoch 42/80 | Stage 2 | TrainLoss 5.6405 | ValLoss 10.8580 | WR2 0.4276 | R2_total 0.496 | R2_gdm 0.513 | LR 7.33e-06
+[2025-12-18 10:27:54] INFO - [Fold 0] Epoch 43/80 | Stage 2 | TrainLoss 5.6013 | ValLoss 11.0515 | WR2 0.4611 | R2_total 0.540 | R2_gdm 0.564 | LR 7.11e-06
+[2025-12-18 10:30:05] INFO - [Fold 0] Epoch 44/80 | Stage 2 | TrainLoss 5.7319 | ValLoss 10.9898 | WR2 0.4485 | R2_total 0.526 | R2_gdm 0.541 | LR 6.89e-06
+[2025-12-18 10:32:15] INFO - [Fold 0] Epoch 45/80 | Stage 2 | TrainLoss 5.3063 | ValLoss 10.9888 | WR2 0.4532 | R2_total 0.531 | R2_gdm 0.549 | LR 6.66e-06
+[2025-12-18 10:34:25] INFO - [Fold 0] Epoch 46/80 | Stage 2 | TrainLoss 5.9054 | ValLoss 10.8797 | WR2 0.4464 | R2_total 0.523 | R2_gdm 0.541 | LR 6.44e-06
+[2025-12-18 10:36:34] INFO - [Fold 0] Epoch 47/80 | Stage 2 | TrainLoss 5.2110 | ValLoss 10.7378 | WR2 0.4633 | R2_total 0.543 | R2_gdm 0.557 | LR 6.20e-06
+[2025-12-18 10:38:43] INFO - [Fold 0] Epoch 48/80 | Stage 2 | TrainLoss 5.2039 | ValLoss 10.9845 | WR2 0.4524 | R2_total 0.529 | R2_gdm 0.545 | LR 5.97e-06
+[2025-12-18 10:40:54] INFO - [Fold 0] Epoch 49/80 | Stage 2 | TrainLoss 5.3273 | ValLoss 11.1131 | WR2 0.4331 | R2_total 0.505 | R2_gdm 0.521 | LR 5.74e-06
+[2025-12-18 10:40:56] INFO - [Fold 0] 早停: 15 epochs 无改善
+[2025-12-18 10:40:56] INFO - [Fold 0] ✓ 训练历史已保存: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/Tile+FiLM/fold0_metrics.csv
+[2025-12-18 10:40:56] INFO - ================================================================================
+[2025-12-18 10:40:56] INFO - [Fold 0] 训练完成总结
+[2025-12-18 10:40:56] INFO -   最佳 WR2: 0.4698
+[2025-12-18 10:40:56] INFO -   最佳 Loss: 10.6269
+[2025-12-18 10:40:56] INFO -   Checkpoints: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/Tile+FiLM/checkpoints/fold0
+[2025-12-18 10:40:56] INFO - ================================================================================
+[2025-12-18 10:40:57] INFO - [Fold 0] SwanLab run 已结束
+[2025-12-18 10:40:57] INFO - ✓ Fold 0 训练完成
+[2025-12-18 10:40:58] INFO - 等待 3 秒后继续下一个 fold...
+[2025-12-18 10:41:01] INFO - ================================================================================
+[2025-12-18 10:41:01] INFO - 开始训练 Fold 1/4
+[2025-12-18 10:41:01] INFO - ================================================================================
+[2025-12-18 10:41:01] INFO - [Fold 1] Train: 285, Valid: 72
+[2025-12-18 10:41:05] INFO - ✅ 使用 CNN 主干: convnext_base.fb_in22k_ft_in1k | feat_dim=1024 | input_res=224
+[2025-12-18 10:41:05] INFO - [Fold 1] 模型: convnext_base.fb_in22k_ft_in1k
+[2025-12-18 10:41:05] INFO - [Fold 1] Params: total=93.74M, trainable=93.74M
+[2025-12-18 10:41:05] INFO - [Fold 1] Input size: 224x224, Grid: (2, 2)
+[2025-12-18 10:41:05] INFO - [Fold 1] 使用多GPU训练: 2 x GPUs
+[2025-12-18 10:41:08] INFO - [Fold 1] SwanLab run_id: eb2htw0ddm8ii2bcxefbc
+[2025-12-18 10:41:08] INFO - [Fold 1] 开始训练，起始 epoch=1, stage=1
+[2025-12-18 10:43:04] INFO - [Fold 1] Epoch 1/80 | Stage 1 | TrainLoss 23.7557 | ValLoss 15.9592 | WR2 -0.2360 | R2_total -0.153 | R2_gdm -0.229 | LR 5.00e-04
+[2025-12-18 10:43:05] INFO - [Fold 1] ✓ 新的最佳 WR2: -0.2360 (Epoch 1)
+[2025-12-18 10:43:05] INFO - [Fold 1] ✓ 新的最佳 Loss: 15.9592 (Epoch 1)
+[2025-12-18 10:45:01] INFO - [Fold 1] Epoch 2/80 | Stage 1 | TrainLoss 14.5113 | ValLoss 12.6018 | WR2 0.1654 | R2_total 0.350 | R2_gdm 0.473 | LR 5.00e-04
+[2025-12-18 10:45:02] INFO - [Fold 1] ✓ 新的最佳 WR2: 0.1654 (Epoch 2)
+[2025-12-18 10:45:03] INFO - [Fold 1] ✓ 新的最佳 Loss: 12.6018 (Epoch 2)
+[2025-12-18 10:46:58] INFO - [Fold 1] Epoch 3/80 | Stage 1 | TrainLoss 11.4538 | ValLoss 10.5545 | WR2 0.4136 | R2_total 0.540 | R2_gdm 0.546 | LR 5.00e-04
+[2025-12-18 10:47:00] INFO - [Fold 1] ✓ 新的最佳 WR2: 0.4136 (Epoch 3)
+[2025-12-18 10:47:00] INFO - [Fold 1] ✓ 新的最佳 Loss: 10.5545 (Epoch 3)
+[2025-12-18 10:48:56] INFO - [Fold 1] Epoch 4/80 | Stage 1 | TrainLoss 10.7648 | ValLoss 11.9144 | WR2 0.2685 | R2_total 0.315 | R2_gdm 0.459 | LR 5.00e-04
+[2025-12-18 10:50:53] INFO - [Fold 1] Epoch 5/80 | Stage 1 | TrainLoss 10.6603 | ValLoss 11.8585 | WR2 0.3240 | R2_total 0.382 | R2_gdm 0.540 | LR 5.00e-04
+[2025-12-18 10:52:48] INFO - [Fold 1] Epoch 6/80 | Stage 1 | TrainLoss 10.5986 | ValLoss 11.0815 | WR2 0.4167 | R2_total 0.506 | R2_gdm 0.583 | LR 5.00e-04
+[2025-12-18 10:52:49] INFO - [Fold 1] ✓ 新的最佳 WR2: 0.4167 (Epoch 6)
+[2025-12-18 10:54:43] INFO - [Fold 1] Epoch 7/80 | Stage 1 | TrainLoss 9.5264 | ValLoss 11.4981 | WR2 0.4147 | R2_total 0.498 | R2_gdm 0.593 | LR 5.00e-04
+[2025-12-18 10:56:38] INFO - [Fold 1] Epoch 8/80 | Stage 1 | TrainLoss 9.3793 | ValLoss 10.4134 | WR2 0.3960 | R2_total 0.460 | R2_gdm 0.589 | LR 5.00e-04
+[2025-12-18 10:56:40] INFO - [Fold 1] ✓ 新的最佳 Loss: 10.4134 (Epoch 8)
+[2025-12-18 10:58:35] INFO - [Fold 1] Epoch 9/80 | Stage 1 | TrainLoss 9.4584 | ValLoss 11.3285 | WR2 0.3359 | R2_total 0.370 | R2_gdm 0.455 | LR 5.00e-04
+[2025-12-18 11:00:30] INFO - [Fold 1] Epoch 10/80 | Stage 1 | TrainLoss 11.6872 | ValLoss 12.0771 | WR2 0.3205 | R2_total 0.336 | R2_gdm 0.477 | LR 5.00e-04
+[2025-12-18 11:02:26] INFO - [Fold 1] Epoch 11/80 | Stage 1 | TrainLoss 10.4544 | ValLoss 9.8521 | WR2 0.4626 | R2_total 0.543 | R2_gdm 0.571 | LR 5.00e-04
+[2025-12-18 11:02:28] INFO - [Fold 1] ✓ 新的最佳 WR2: 0.4626 (Epoch 11)
+[2025-12-18 11:02:28] INFO - [Fold 1] ✓ 新的最佳 Loss: 9.8521 (Epoch 11)
+[2025-12-18 11:04:23] INFO - [Fold 1] Epoch 12/80 | Stage 1 | TrainLoss 9.5713 | ValLoss 11.1281 | WR2 0.4159 | R2_total 0.495 | R2_gdm 0.462 | LR 5.00e-04
+[2025-12-18 11:06:19] INFO - [Fold 1] Epoch 13/80 | Stage 1 | TrainLoss 9.0474 | ValLoss 9.6815 | WR2 0.5155 | R2_total 0.598 | R2_gdm 0.619 | LR 5.00e-04
+[2025-12-18 11:06:21] INFO - [Fold 1] ✓ 新的最佳 WR2: 0.5155 (Epoch 13)
+[2025-12-18 11:06:21] INFO - [Fold 1] ✓ 新的最佳 Loss: 9.6815 (Epoch 13)
+[2025-12-18 11:08:16] INFO - [Fold 1] Epoch 14/80 | Stage 1 | TrainLoss 8.7620 | ValLoss 9.9695 | WR2 0.4507 | R2_total 0.504 | R2_gdm 0.564 | LR 5.00e-04
+[2025-12-18 11:10:12] INFO - [Fold 1] Epoch 15/80 | Stage 1 | TrainLoss 8.9480 | ValLoss 10.1613 | WR2 0.4557 | R2_total 0.517 | R2_gdm 0.563 | LR 5.00e-04
+[2025-12-18 11:12:08] INFO - [Fold 1] Epoch 16/80 | Stage 1 | TrainLoss 8.5971 | ValLoss 10.8514 | WR2 0.4199 | R2_total 0.467 | R2_gdm 0.496 | LR 5.00e-04
+[2025-12-18 11:14:02] INFO - [Fold 1] Epoch 17/80 | Stage 1 | TrainLoss 8.5157 | ValLoss 9.4944 | WR2 0.5171 | R2_total 0.581 | R2_gdm 0.620 | LR 5.00e-04
+[2025-12-18 11:14:04] INFO - [Fold 1] ✓ 新的最佳 WR2: 0.5171 (Epoch 17)
+[2025-12-18 11:14:04] INFO - [Fold 1] ✓ 新的最佳 Loss: 9.4944 (Epoch 17)
+[2025-12-18 11:15:59] INFO - [Fold 1] Epoch 18/80 | Stage 1 | TrainLoss 8.8522 | ValLoss 9.5723 | WR2 0.5128 | R2_total 0.583 | R2_gdm 0.583 | LR 5.00e-04
+[2025-12-18 11:17:56] INFO - [Fold 1] Epoch 19/80 | Stage 1 | TrainLoss 8.7512 | ValLoss 9.8944 | WR2 0.4758 | R2_total 0.551 | R2_gdm 0.578 | LR 5.00e-04
+[2025-12-18 11:19:52] INFO - [Fold 1] Epoch 20/80 | Stage 1 | TrainLoss 8.6900 | ValLoss 9.0307 | WR2 0.5367 | R2_total 0.608 | R2_gdm 0.632 | LR 5.00e-04
+[2025-12-18 11:19:54] INFO - [Fold 1] ✓ 新的最佳 WR2: 0.5367 (Epoch 20)
+[2025-12-18 11:19:54] INFO - [Fold 1] ✓ 新的最佳 Loss: 9.0307 (Epoch 20)
+[2025-12-18 11:19:54] INFO - [Fold 1] 进入 Stage 2（解冻主干）
+[2025-12-18 11:22:02] INFO - [Fold 1] Epoch 21/80 | Stage 2 | TrainLoss 7.7943 | ValLoss 9.4171 | WR2 0.5393 | R2_total 0.600 | R2_gdm 0.652 | LR 9.99e-06
+[2025-12-18 11:22:07] INFO - [Fold 1] ✓ 新的最佳 WR2: 0.5393 (Epoch 21)
+[2025-12-18 11:24:15] INFO - [Fold 1] Epoch 22/80 | Stage 2 | TrainLoss 7.1813 | ValLoss 9.4906 | WR2 0.5205 | R2_total 0.565 | R2_gdm 0.636 | LR 9.98e-06
+[2025-12-18 11:26:27] INFO - [Fold 1] Epoch 23/80 | Stage 2 | TrainLoss 7.3759 | ValLoss 9.7930 | WR2 0.5200 | R2_total 0.567 | R2_gdm 0.619 | LR 9.94e-06
+[2025-12-18 11:28:36] INFO - [Fold 1] Epoch 24/80 | Stage 2 | TrainLoss 7.4376 | ValLoss 9.7147 | WR2 0.5223 | R2_total 0.567 | R2_gdm 0.619 | LR 9.90e-06
+[2025-12-18 11:30:46] INFO - [Fold 1] Epoch 25/80 | Stage 2 | TrainLoss 7.2729 | ValLoss 9.3995 | WR2 0.5408 | R2_total 0.591 | R2_gdm 0.643 | LR 9.85e-06
+[2025-12-18 11:30:50] INFO - [Fold 1] ✓ 新的最佳 WR2: 0.5408 (Epoch 25)
+[2025-12-18 11:32:57] INFO - [Fold 1] Epoch 26/80 | Stage 2 | TrainLoss 6.9999 | ValLoss 9.1792 | WR2 0.5411 | R2_total 0.588 | R2_gdm 0.639 | LR 9.78e-06
+[2025-12-18 11:33:01] INFO - [Fold 1] ✓ 新的最佳 WR2: 0.5411 (Epoch 26)
+[2025-12-18 11:35:08] INFO - [Fold 1] Epoch 27/80 | Stage 2 | TrainLoss 7.1193 | ValLoss 8.8505 | WR2 0.5601 | R2_total 0.618 | R2_gdm 0.648 | LR 9.70e-06
+[2025-12-18 11:35:11] INFO - [Fold 1] ✓ 新的最佳 WR2: 0.5601 (Epoch 27)
+[2025-12-18 11:35:13] INFO - [Fold 1] ✓ 新的最佳 Loss: 8.8505 (Epoch 27)
+[2025-12-18 11:37:20] INFO - [Fold 1] Epoch 28/80 | Stage 2 | TrainLoss 6.7339 | ValLoss 8.9392 | WR2 0.5563 | R2_total 0.614 | R2_gdm 0.631 | LR 9.61e-06
+[2025-12-18 11:39:31] INFO - [Fold 1] Epoch 29/80 | Stage 2 | TrainLoss 6.9986 | ValLoss 9.1848 | WR2 0.5482 | R2_total 0.600 | R2_gdm 0.631 | LR 9.51e-06
+[2025-12-18 11:41:42] INFO - [Fold 1] Epoch 30/80 | Stage 2 | TrainLoss 6.8769 | ValLoss 9.0412 | WR2 0.5485 | R2_total 0.597 | R2_gdm 0.636 | LR 9.40e-06
+[2025-12-18 11:43:51] INFO - [Fold 1] Epoch 31/80 | Stage 2 | TrainLoss 7.1295 | ValLoss 8.9152 | WR2 0.5583 | R2_total 0.612 | R2_gdm 0.640 | LR 9.27e-06
+[2025-12-18 11:46:01] INFO - [Fold 1] Epoch 32/80 | Stage 2 | TrainLoss 7.0758 | ValLoss 9.3200 | WR2 0.5394 | R2_total 0.589 | R2_gdm 0.607 | LR 9.14e-06
+[2025-12-18 11:48:10] INFO - [Fold 1] Epoch 33/80 | Stage 2 | TrainLoss 6.7799 | ValLoss 9.2952 | WR2 0.5422 | R2_total 0.591 | R2_gdm 0.615 | LR 9.00e-06
+[2025-12-18 11:50:19] INFO - [Fold 1] Epoch 34/80 | Stage 2 | TrainLoss 6.7010 | ValLoss 9.0283 | WR2 0.5422 | R2_total 0.587 | R2_gdm 0.625 | LR 8.84e-06
+[2025-12-18 11:52:30] INFO - [Fold 1] Epoch 35/80 | Stage 2 | TrainLoss 6.4022 | ValLoss 9.1289 | WR2 0.5412 | R2_total 0.589 | R2_gdm 0.625 | LR 8.68e-06
+[2025-12-18 11:54:40] INFO - [Fold 1] Epoch 36/80 | Stage 2 | TrainLoss 6.5762 | ValLoss 9.3938 | WR2 0.5111 | R2_total 0.549 | R2_gdm 0.579 | LR 8.51e-06
+[2025-12-18 11:56:49] INFO - [Fold 1] Epoch 37/80 | Stage 2 | TrainLoss 6.3677 | ValLoss 9.2353 | WR2 0.5327 | R2_total 0.584 | R2_gdm 0.583 | LR 8.33e-06
+[2025-12-18 11:58:59] INFO - [Fold 1] Epoch 38/80 | Stage 2 | TrainLoss 6.2839 | ValLoss 9.1897 | WR2 0.5441 | R2_total 0.596 | R2_gdm 0.604 | LR 8.15e-06
+[2025-12-18 12:01:10] INFO - [Fold 1] Epoch 39/80 | Stage 2 | TrainLoss 6.3110 | ValLoss 8.8941 | WR2 0.5453 | R2_total 0.591 | R2_gdm 0.616 | LR 7.95e-06
+[2025-12-18 12:03:21] INFO - [Fold 1] Epoch 40/80 | Stage 2 | TrainLoss 6.0216 | ValLoss 9.4146 | WR2 0.5348 | R2_total 0.584 | R2_gdm 0.592 | LR 7.75e-06
+[2025-12-18 12:05:31] INFO - [Fold 1] Epoch 41/80 | Stage 2 | TrainLoss 6.5655 | ValLoss 8.8972 | WR2 0.5489 | R2_total 0.592 | R2_gdm 0.626 | LR 7.54e-06
+[2025-12-18 12:07:42] INFO - [Fold 1] Epoch 42/80 | Stage 2 | TrainLoss 6.1489 | ValLoss 8.8443 | WR2 0.5560 | R2_total 0.599 | R2_gdm 0.632 | LR 7.33e-06
+[2025-12-18 12:07:45] INFO - [Fold 1] ✓ 新的最佳 Loss: 8.8443 (Epoch 42)
+[2025-12-18 12:07:45] INFO - [Fold 1] 早停: 15 epochs 无改善
+[2025-12-18 12:07:45] INFO - [Fold 1] ✓ 训练历史已保存: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/Tile+FiLM/fold1_metrics.csv
+[2025-12-18 12:07:45] INFO - ================================================================================
+[2025-12-18 12:07:45] INFO - [Fold 1] 训练完成总结
+[2025-12-18 12:07:45] INFO -   最佳 WR2: 0.5601
+[2025-12-18 12:07:45] INFO -   最佳 Loss: 8.8443
+[2025-12-18 12:07:45] INFO -   Checkpoints: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/Tile+FiLM/checkpoints/fold1
+[2025-12-18 12:07:45] INFO - ================================================================================
+[2025-12-18 12:07:46] INFO - [Fold 1] SwanLab run 已结束
+[2025-12-18 12:07:46] INFO - ✓ Fold 1 训练完成
+[2025-12-18 12:07:47] INFO - 等待 3 秒后继续下一个 fold...
+[2025-12-18 12:07:50] INFO - ================================================================================
+[2025-12-18 12:07:50] INFO - 开始训练 Fold 2/4
+[2025-12-18 12:07:50] INFO - ================================================================================
+[2025-12-18 12:07:50] INFO - [Fold 2] Train: 286, Valid: 71
+[2025-12-18 12:07:54] INFO - ✅ 使用 CNN 主干: convnext_base.fb_in22k_ft_in1k | feat_dim=1024 | input_res=224
+[2025-12-18 12:07:54] INFO - [Fold 2] 模型: convnext_base.fb_in22k_ft_in1k
+[2025-12-18 12:07:54] INFO - [Fold 2] Params: total=93.74M, trainable=93.74M
+[2025-12-18 12:07:54] INFO - [Fold 2] Input size: 224x224, Grid: (2, 2)
+[2025-12-18 12:07:54] INFO - [Fold 2] 使用多GPU训练: 2 x GPUs
+[2025-12-18 12:07:56] INFO - [Fold 2] SwanLab run_id: k00yl8akun91x6vbzio13
+[2025-12-18 12:07:56] INFO - [Fold 2] 开始训练，起始 epoch=1, stage=1
+[2025-12-18 12:09:52] INFO - [Fold 2] Epoch 1/80 | Stage 1 | TrainLoss 23.1806 | ValLoss 15.5937 | WR2 -0.0451 | R2_total -0.025 | R2_gdm 0.002 | LR 5.00e-04
+[2025-12-18 12:09:53] INFO - [Fold 2] ✓ 新的最佳 WR2: -0.0451 (Epoch 1)
+[2025-12-18 12:09:54] INFO - [Fold 2] ✓ 新的最佳 Loss: 15.5937 (Epoch 1)
+[2025-12-18 12:11:49] INFO - [Fold 2] Epoch 2/80 | Stage 1 | TrainLoss 13.6655 | ValLoss 10.0879 | WR2 0.4404 | R2_total 0.592 | R2_gdm 0.564 | LR 5.00e-04
+[2025-12-18 12:11:50] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.4404 (Epoch 2)
+[2025-12-18 12:11:51] INFO - [Fold 2] ✓ 新的最佳 Loss: 10.0879 (Epoch 2)
+[2025-12-18 12:13:46] INFO - [Fold 2] Epoch 3/80 | Stage 1 | TrainLoss 11.8493 | ValLoss 10.1473 | WR2 0.5106 | R2_total 0.686 | R2_gdm 0.657 | LR 5.00e-04
+[2025-12-18 12:13:47] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.5106 (Epoch 3)
+[2025-12-18 12:15:42] INFO - [Fold 2] Epoch 4/80 | Stage 1 | TrainLoss 11.5047 | ValLoss 12.1121 | WR2 0.2789 | R2_total 0.374 | R2_gdm 0.416 | LR 5.00e-04
+[2025-12-18 12:17:38] INFO - [Fold 2] Epoch 5/80 | Stage 1 | TrainLoss 12.6202 | ValLoss 10.7521 | WR2 0.4840 | R2_total 0.657 | R2_gdm 0.657 | LR 5.00e-04
+[2025-12-18 12:19:34] INFO - [Fold 2] Epoch 6/80 | Stage 1 | TrainLoss 10.5868 | ValLoss 10.2223 | WR2 0.5350 | R2_total 0.715 | R2_gdm 0.658 | LR 5.00e-04
+[2025-12-18 12:19:35] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.5350 (Epoch 6)
+[2025-12-18 12:21:31] INFO - [Fold 2] Epoch 7/80 | Stage 1 | TrainLoss 10.1454 | ValLoss 9.6810 | WR2 0.5458 | R2_total 0.720 | R2_gdm 0.705 | LR 5.00e-04
+[2025-12-18 12:21:32] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.5458 (Epoch 7)
+[2025-12-18 12:21:33] INFO - [Fold 2] ✓ 新的最佳 Loss: 9.6810 (Epoch 7)
+[2025-12-18 12:23:29] INFO - [Fold 2] Epoch 8/80 | Stage 1 | TrainLoss 10.1571 | ValLoss 9.2874 | WR2 0.5317 | R2_total 0.679 | R2_gdm 0.637 | LR 5.00e-04
+[2025-12-18 12:23:30] INFO - [Fold 2] ✓ 新的最佳 Loss: 9.2874 (Epoch 8)
+[2025-12-18 12:25:27] INFO - [Fold 2] Epoch 9/80 | Stage 1 | TrainLoss 10.2973 | ValLoss 9.6561 | WR2 0.5707 | R2_total 0.718 | R2_gdm 0.712 | LR 5.00e-04
+[2025-12-18 12:25:29] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.5707 (Epoch 9)
+[2025-12-18 12:27:25] INFO - [Fold 2] Epoch 10/80 | Stage 1 | TrainLoss 9.3622 | ValLoss 8.5413 | WR2 0.5920 | R2_total 0.738 | R2_gdm 0.728 | LR 5.00e-04
+[2025-12-18 12:27:26] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.5920 (Epoch 10)
+[2025-12-18 12:27:27] INFO - [Fold 2] ✓ 新的最佳 Loss: 8.5413 (Epoch 10)
+[2025-12-18 12:29:22] INFO - [Fold 2] Epoch 11/80 | Stage 1 | TrainLoss 8.9291 | ValLoss 9.5966 | WR2 0.4819 | R2_total 0.566 | R2_gdm 0.665 | LR 5.00e-04
+[2025-12-18 12:31:19] INFO - [Fold 2] Epoch 12/80 | Stage 1 | TrainLoss 10.1024 | ValLoss 10.1282 | WR2 0.4203 | R2_total 0.514 | R2_gdm 0.527 | LR 5.00e-04
+[2025-12-18 12:33:16] INFO - [Fold 2] Epoch 13/80 | Stage 1 | TrainLoss 9.4454 | ValLoss 7.8811 | WR2 0.6097 | R2_total 0.750 | R2_gdm 0.780 | LR 5.00e-04
+[2025-12-18 12:33:17] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.6097 (Epoch 13)
+[2025-12-18 12:33:18] INFO - [Fold 2] ✓ 新的最佳 Loss: 7.8811 (Epoch 13)
+[2025-12-18 12:35:14] INFO - [Fold 2] Epoch 14/80 | Stage 1 | TrainLoss 10.1681 | ValLoss 8.2644 | WR2 0.6015 | R2_total 0.693 | R2_gdm 0.733 | LR 5.00e-04
+[2025-12-18 12:37:10] INFO - [Fold 2] Epoch 15/80 | Stage 1 | TrainLoss 9.3983 | ValLoss 12.7331 | WR2 0.4552 | R2_total 0.510 | R2_gdm 0.678 | LR 5.00e-04
+[2025-12-18 12:39:06] INFO - [Fold 2] Epoch 16/80 | Stage 1 | TrainLoss 10.0876 | ValLoss 8.2490 | WR2 0.5665 | R2_total 0.676 | R2_gdm 0.729 | LR 5.00e-04
+[2025-12-18 12:41:02] INFO - [Fold 2] Epoch 17/80 | Stage 1 | TrainLoss 8.9679 | ValLoss 11.3592 | WR2 0.3777 | R2_total 0.393 | R2_gdm 0.575 | LR 5.00e-04
+[2025-12-18 12:42:57] INFO - [Fold 2] Epoch 18/80 | Stage 1 | TrainLoss 9.2389 | ValLoss 8.4540 | WR2 0.6441 | R2_total 0.749 | R2_gdm 0.793 | LR 5.00e-04
+[2025-12-18 12:42:59] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.6441 (Epoch 18)
+[2025-12-18 12:44:53] INFO - [Fold 2] Epoch 19/80 | Stage 1 | TrainLoss 9.0884 | ValLoss 8.4904 | WR2 0.6363 | R2_total 0.771 | R2_gdm 0.793 | LR 5.00e-04
+[2025-12-18 12:46:50] INFO - [Fold 2] Epoch 20/80 | Stage 1 | TrainLoss 8.3477 | ValLoss 8.3331 | WR2 0.5881 | R2_total 0.697 | R2_gdm 0.719 | LR 5.00e-04
+[2025-12-18 12:46:50] INFO - [Fold 2] 进入 Stage 2（解冻主干）
+[2025-12-18 12:48:59] INFO - [Fold 2] Epoch 21/80 | Stage 2 | TrainLoss 8.3169 | ValLoss 8.5897 | WR2 0.6353 | R2_total 0.741 | R2_gdm 0.761 | LR 9.99e-06
+[2025-12-18 12:51:09] INFO - [Fold 2] Epoch 22/80 | Stage 2 | TrainLoss 7.7438 | ValLoss 8.8063 | WR2 0.6331 | R2_total 0.716 | R2_gdm 0.791 | LR 9.98e-06
+[2025-12-18 12:53:20] INFO - [Fold 2] Epoch 23/80 | Stage 2 | TrainLoss 7.8405 | ValLoss 8.7119 | WR2 0.6552 | R2_total 0.746 | R2_gdm 0.792 | LR 9.94e-06
+[2025-12-18 12:53:23] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.6552 (Epoch 23)
+[2025-12-18 12:55:32] INFO - [Fold 2] Epoch 24/80 | Stage 2 | TrainLoss 7.3095 | ValLoss 7.4387 | WR2 0.6702 | R2_total 0.771 | R2_gdm 0.788 | LR 9.90e-06
+[2025-12-18 12:55:36] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.6702 (Epoch 24)
+[2025-12-18 12:55:38] INFO - [Fold 2] ✓ 新的最佳 Loss: 7.4387 (Epoch 24)
+[2025-12-18 12:57:45] INFO - [Fold 2] Epoch 25/80 | Stage 2 | TrainLoss 7.3670 | ValLoss 8.4769 | WR2 0.6709 | R2_total 0.763 | R2_gdm 0.801 | LR 9.85e-06
+[2025-12-18 12:57:49] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.6709 (Epoch 25)
+[2025-12-18 12:59:57] INFO - [Fold 2] Epoch 26/80 | Stage 2 | TrainLoss 6.8002 | ValLoss 8.1619 | WR2 0.6743 | R2_total 0.765 | R2_gdm 0.812 | LR 9.78e-06
+[2025-12-18 13:00:01] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.6743 (Epoch 26)
+[2025-12-18 13:02:08] INFO - [Fold 2] Epoch 27/80 | Stage 2 | TrainLoss 6.9773 | ValLoss 7.5698 | WR2 0.6803 | R2_total 0.775 | R2_gdm 0.816 | LR 9.70e-06
+[2025-12-18 13:02:11] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.6803 (Epoch 27)
+[2025-12-18 13:04:20] INFO - [Fold 2] Epoch 28/80 | Stage 2 | TrainLoss 7.3183 | ValLoss 8.7340 | WR2 0.6556 | R2_total 0.743 | R2_gdm 0.793 | LR 9.61e-06
+[2025-12-18 13:06:30] INFO - [Fold 2] Epoch 29/80 | Stage 2 | TrainLoss 6.7462 | ValLoss 7.7528 | WR2 0.6764 | R2_total 0.770 | R2_gdm 0.813 | LR 9.51e-06
+[2025-12-18 13:08:40] INFO - [Fold 2] Epoch 30/80 | Stage 2 | TrainLoss 6.7000 | ValLoss 8.1625 | WR2 0.6722 | R2_total 0.763 | R2_gdm 0.807 | LR 9.40e-06
+[2025-12-18 14:33:48] INFO - [Fold 2] Epoch 31/80 | Stage 2 | TrainLoss 6.3406 | ValLoss 7.5198 | WR2 0.6903 | R2_total 0.786 | R2_gdm 0.820 | LR 9.27e-06
+[2025-12-18 14:33:51] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.6903 (Epoch 31)
+[2025-12-18 14:35:58] INFO - [Fold 2] Epoch 32/80 | Stage 2 | TrainLoss 6.3894 | ValLoss 7.4769 | WR2 0.6945 | R2_total 0.791 | R2_gdm 0.822 | LR 9.14e-06
+[2025-12-18 14:36:02] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.6945 (Epoch 32)
+[2025-12-18 14:38:11] INFO - [Fold 2] Epoch 33/80 | Stage 2 | TrainLoss 6.3254 | ValLoss 7.8804 | WR2 0.6767 | R2_total 0.765 | R2_gdm 0.816 | LR 9.00e-06
+[2025-12-18 14:40:22] INFO - [Fold 2] Epoch 34/80 | Stage 2 | TrainLoss 6.0868 | ValLoss 7.3817 | WR2 0.6865 | R2_total 0.779 | R2_gdm 0.821 | LR 8.84e-06
+[2025-12-18 14:40:25] INFO - [Fold 2] ✓ 新的最佳 Loss: 7.3817 (Epoch 34)
+[2025-12-18 14:42:35] INFO - [Fold 2] Epoch 35/80 | Stage 2 | TrainLoss 6.4939 | ValLoss 7.1772 | WR2 0.6873 | R2_total 0.779 | R2_gdm 0.824 | LR 8.68e-06
+[2025-12-18 14:42:38] INFO - [Fold 2] ✓ 新的最佳 Loss: 7.1772 (Epoch 35)
+[2025-12-18 14:44:45] INFO - [Fold 2] Epoch 36/80 | Stage 2 | TrainLoss 6.0587 | ValLoss 8.0590 | WR2 0.6700 | R2_total 0.757 | R2_gdm 0.804 | LR 8.51e-06
+[2025-12-18 14:46:57] INFO - [Fold 2] Epoch 37/80 | Stage 2 | TrainLoss 5.9971 | ValLoss 7.5042 | WR2 0.6839 | R2_total 0.777 | R2_gdm 0.813 | LR 8.33e-06
+[2025-12-18 14:49:09] INFO - [Fold 2] Epoch 38/80 | Stage 2 | TrainLoss 6.0512 | ValLoss 7.9027 | WR2 0.6771 | R2_total 0.769 | R2_gdm 0.802 | LR 8.15e-06
+[2025-12-18 14:51:19] INFO - [Fold 2] Epoch 39/80 | Stage 2 | TrainLoss 5.9673 | ValLoss 8.0468 | WR2 0.6877 | R2_total 0.783 | R2_gdm 0.808 | LR 7.95e-06
+[2025-12-18 14:53:29] INFO - [Fold 2] Epoch 40/80 | Stage 2 | TrainLoss 6.4174 | ValLoss 7.6097 | WR2 0.6919 | R2_total 0.792 | R2_gdm 0.807 | LR 7.75e-06
+[2025-12-18 14:55:40] INFO - [Fold 2] Epoch 41/80 | Stage 2 | TrainLoss 6.1967 | ValLoss 7.4678 | WR2 0.6989 | R2_total 0.796 | R2_gdm 0.833 | LR 7.54e-06
+[2025-12-18 14:55:43] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.6989 (Epoch 41)
+[2025-12-18 14:57:52] INFO - [Fold 2] Epoch 42/80 | Stage 2 | TrainLoss 5.9841 | ValLoss 7.2458 | WR2 0.6920 | R2_total 0.787 | R2_gdm 0.823 | LR 7.33e-06
+[2025-12-18 15:00:03] INFO - [Fold 2] Epoch 43/80 | Stage 2 | TrainLoss 5.9520 | ValLoss 7.1907 | WR2 0.6965 | R2_total 0.792 | R2_gdm 0.828 | LR 7.11e-06
+[2025-12-18 15:02:13] INFO - [Fold 2] Epoch 44/80 | Stage 2 | TrainLoss 5.8600 | ValLoss 7.3605 | WR2 0.6967 | R2_total 0.792 | R2_gdm 0.831 | LR 6.89e-06
+[2025-12-18 15:04:24] INFO - [Fold 2] Epoch 45/80 | Stage 2 | TrainLoss 5.4647 | ValLoss 7.1122 | WR2 0.7088 | R2_total 0.809 | R2_gdm 0.838 | LR 6.66e-06
+[2025-12-18 15:04:27] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.7088 (Epoch 45)
+[2025-12-18 15:04:29] INFO - [Fold 2] ✓ 新的最佳 Loss: 7.1122 (Epoch 45)
+[2025-12-18 15:06:35] INFO - [Fold 2] Epoch 46/80 | Stage 2 | TrainLoss 5.7985 | ValLoss 7.1012 | WR2 0.7019 | R2_total 0.802 | R2_gdm 0.826 | LR 6.44e-06
+[2025-12-18 15:06:38] INFO - [Fold 2] ✓ 新的最佳 Loss: 7.1012 (Epoch 46)
+[2025-12-18 15:08:47] INFO - [Fold 2] Epoch 47/80 | Stage 2 | TrainLoss 5.8359 | ValLoss 7.5380 | WR2 0.6993 | R2_total 0.796 | R2_gdm 0.830 | LR 6.20e-06
+[2025-12-18 15:10:57] INFO - [Fold 2] Epoch 48/80 | Stage 2 | TrainLoss 5.9645 | ValLoss 7.0988 | WR2 0.7043 | R2_total 0.803 | R2_gdm 0.830 | LR 5.97e-06
+[2025-12-18 15:11:01] INFO - [Fold 2] ✓ 新的最佳 Loss: 7.0988 (Epoch 48)
+[2025-12-18 15:13:08] INFO - [Fold 2] Epoch 49/80 | Stage 2 | TrainLoss 5.7343 | ValLoss 7.1311 | WR2 0.7043 | R2_total 0.803 | R2_gdm 0.828 | LR 5.74e-06
+[2025-12-18 15:15:18] INFO - [Fold 2] Epoch 50/80 | Stage 2 | TrainLoss 5.8428 | ValLoss 7.2760 | WR2 0.7054 | R2_total 0.802 | R2_gdm 0.836 | LR 5.50e-06
+[2025-12-18 15:17:29] INFO - [Fold 2] Epoch 51/80 | Stage 2 | TrainLoss 5.5373 | ValLoss 6.9852 | WR2 0.7077 | R2_total 0.804 | R2_gdm 0.838 | LR 5.26e-06
+[2025-12-18 15:17:32] INFO - [Fold 2] ✓ 新的最佳 Loss: 6.9852 (Epoch 51)
+[2025-12-18 15:19:40] INFO - [Fold 2] Epoch 52/80 | Stage 2 | TrainLoss 5.5641 | ValLoss 7.1859 | WR2 0.7026 | R2_total 0.797 | R2_gdm 0.837 | LR 5.03e-06
+[2025-12-18 15:21:50] INFO - [Fold 2] Epoch 53/80 | Stage 2 | TrainLoss 5.4896 | ValLoss 7.1156 | WR2 0.7073 | R2_total 0.802 | R2_gdm 0.840 | LR 4.80e-06
+[2025-12-18 15:23:58] INFO - [Fold 2] Epoch 54/80 | Stage 2 | TrainLoss 5.4144 | ValLoss 7.3315 | WR2 0.6986 | R2_total 0.792 | R2_gdm 0.828 | LR 4.56e-06
+[2025-12-18 15:26:08] INFO - [Fold 2] Epoch 55/80 | Stage 2 | TrainLoss 5.4084 | ValLoss 6.9968 | WR2 0.7066 | R2_total 0.801 | R2_gdm 0.836 | LR 4.34e-06
+[2025-12-18 15:28:19] INFO - [Fold 2] Epoch 56/80 | Stage 2 | TrainLoss 5.6537 | ValLoss 7.5602 | WR2 0.6992 | R2_total 0.794 | R2_gdm 0.824 | LR 4.11e-06
+[2025-12-18 15:30:29] INFO - [Fold 2] Epoch 57/80 | Stage 2 | TrainLoss 5.1920 | ValLoss 6.9807 | WR2 0.7116 | R2_total 0.808 | R2_gdm 0.835 | LR 3.89e-06
+[2025-12-18 15:30:33] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.7116 (Epoch 57)
+[2025-12-18 15:30:34] INFO - [Fold 2] ✓ 新的最佳 Loss: 6.9807 (Epoch 57)
+[2025-12-18 15:32:43] INFO - [Fold 2] Epoch 58/80 | Stage 2 | TrainLoss 5.4920 | ValLoss 7.0068 | WR2 0.7137 | R2_total 0.811 | R2_gdm 0.838 | LR 3.67e-06
+[2025-12-18 15:32:46] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.7137 (Epoch 58)
+[2025-12-18 15:34:54] INFO - [Fold 2] Epoch 59/80 | Stage 2 | TrainLoss 5.3461 | ValLoss 7.1405 | WR2 0.7070 | R2_total 0.801 | R2_gdm 0.835 | LR 3.46e-06
+[2025-12-18 15:37:04] INFO - [Fold 2] Epoch 60/80 | Stage 2 | TrainLoss 5.2757 | ValLoss 7.4581 | WR2 0.7048 | R2_total 0.798 | R2_gdm 0.832 | LR 3.25e-06
+[2025-12-18 15:39:16] INFO - [Fold 2] Epoch 61/80 | Stage 2 | TrainLoss 5.4586 | ValLoss 7.1107 | WR2 0.7116 | R2_total 0.805 | R2_gdm 0.839 | LR 3.05e-06
+[2025-12-18 15:41:27] INFO - [Fold 2] Epoch 62/80 | Stage 2 | TrainLoss 4.9488 | ValLoss 7.3299 | WR2 0.7061 | R2_total 0.799 | R2_gdm 0.836 | LR 2.85e-06
+[2025-12-18 15:43:37] INFO - [Fold 2] Epoch 63/80 | Stage 2 | TrainLoss 5.3574 | ValLoss 7.0170 | WR2 0.7095 | R2_total 0.804 | R2_gdm 0.839 | LR 2.67e-06
+[2025-12-18 15:45:47] INFO - [Fold 2] Epoch 64/80 | Stage 2 | TrainLoss 5.1146 | ValLoss 6.9779 | WR2 0.7170 | R2_total 0.813 | R2_gdm 0.846 | LR 2.49e-06
+[2025-12-18 15:45:51] INFO - [Fold 2] ✓ 新的最佳 WR2: 0.7170 (Epoch 64)
+[2025-12-18 15:45:52] INFO - [Fold 2] ✓ 新的最佳 Loss: 6.9779 (Epoch 64)
+[2025-12-18 15:48:00] INFO - [Fold 2] Epoch 65/80 | Stage 2 | TrainLoss 5.3127 | ValLoss 7.2417 | WR2 0.7106 | R2_total 0.805 | R2_gdm 0.837 | LR 2.32e-06
+[2025-12-18 15:50:09] INFO - [Fold 2] Epoch 66/80 | Stage 2 | TrainLoss 5.3556 | ValLoss 7.0063 | WR2 0.7115 | R2_total 0.806 | R2_gdm 0.838 | LR 2.16e-06
+[2025-12-18 15:52:18] INFO - [Fold 2] Epoch 67/80 | Stage 2 | TrainLoss 5.1909 | ValLoss 7.0198 | WR2 0.7095 | R2_total 0.804 | R2_gdm 0.837 | LR 2.00e-06
+[2025-12-18 15:54:29] INFO - [Fold 2] Epoch 68/80 | Stage 2 | TrainLoss 5.1508 | ValLoss 7.1521 | WR2 0.7107 | R2_total 0.805 | R2_gdm 0.839 | LR 1.86e-06
+[2025-12-18 15:56:39] INFO - [Fold 2] Epoch 69/80 | Stage 2 | TrainLoss 5.1786 | ValLoss 7.0347 | WR2 0.7120 | R2_total 0.807 | R2_gdm 0.839 | LR 1.73e-06
+[2025-12-18 15:58:50] INFO - [Fold 2] Epoch 70/80 | Stage 2 | TrainLoss 5.2320 | ValLoss 7.2689 | WR2 0.7120 | R2_total 0.807 | R2_gdm 0.839 | LR 1.60e-06
+[2025-12-18 16:01:01] INFO - [Fold 2] Epoch 71/80 | Stage 2 | TrainLoss 5.0447 | ValLoss 7.1218 | WR2 0.7100 | R2_total 0.804 | R2_gdm 0.839 | LR 1.49e-06
+[2025-12-18 16:03:12] INFO - [Fold 2] Epoch 72/80 | Stage 2 | TrainLoss 5.1553 | ValLoss 7.2512 | WR2 0.7073 | R2_total 0.800 | R2_gdm 0.838 | LR 1.39e-06
+[2025-12-18 16:05:24] INFO - [Fold 2] Epoch 73/80 | Stage 2 | TrainLoss 4.9494 | ValLoss 7.2787 | WR2 0.7070 | R2_total 0.800 | R2_gdm 0.837 | LR 1.30e-06
+[2025-12-18 16:07:34] INFO - [Fold 2] Epoch 74/80 | Stage 2 | TrainLoss 5.2687 | ValLoss 7.1755 | WR2 0.7085 | R2_total 0.802 | R2_gdm 0.838 | LR 1.22e-06
+[2025-12-18 16:09:44] INFO - [Fold 2] Epoch 75/80 | Stage 2 | TrainLoss 5.1475 | ValLoss 7.0898 | WR2 0.7078 | R2_total 0.800 | R2_gdm 0.839 | LR 1.15e-06
+[2025-12-18 16:11:54] INFO - [Fold 2] Epoch 76/80 | Stage 2 | TrainLoss 5.1286 | ValLoss 7.0718 | WR2 0.7081 | R2_total 0.800 | R2_gdm 0.840 | LR 1.10e-06
+[2025-12-18 16:14:06] INFO - [Fold 2] Epoch 77/80 | Stage 2 | TrainLoss 5.0350 | ValLoss 7.2958 | WR2 0.7069 | R2_total 0.799 | R2_gdm 0.839 | LR 1.06e-06
+[2025-12-18 16:16:16] INFO - [Fold 2] Epoch 78/80 | Stage 2 | TrainLoss 4.8384 | ValLoss 7.0440 | WR2 0.7106 | R2_total 0.804 | R2_gdm 0.840 | LR 1.02e-06
+[2025-12-18 16:18:28] INFO - [Fold 2] Epoch 79/80 | Stage 2 | TrainLoss 5.0902 | ValLoss 7.1026 | WR2 0.7099 | R2_total 0.803 | R2_gdm 0.841 | LR 1.01e-06
+[2025-12-18 16:18:30] INFO - [Fold 2] 早停: 15 epochs 无改善
+[2025-12-18 16:18:30] INFO - [Fold 2] ✓ 训练历史已保存: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/Tile+FiLM/fold2_metrics.csv
+[2025-12-18 16:18:30] INFO - ================================================================================
+[2025-12-18 16:18:30] INFO - [Fold 2] 训练完成总结
+[2025-12-18 16:18:30] INFO -   最佳 WR2: 0.7170
+[2025-12-18 16:18:30] INFO -   最佳 Loss: 6.9779
+[2025-12-18 16:18:30] INFO -   Checkpoints: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/Tile+FiLM/checkpoints/fold2
+[2025-12-18 16:18:30] INFO - ================================================================================
+[2025-12-18 16:18:33] INFO - [Fold 2] SwanLab run 已结束
+[2025-12-18 16:18:33] INFO - ✓ Fold 2 训练完成
+[2025-12-18 16:18:34] INFO - 等待 3 秒后继续下一个 fold...
+[2025-12-18 16:18:37] INFO - ================================================================================
+[2025-12-18 16:18:37] INFO - 开始训练 Fold 3/4
+[2025-12-18 16:18:37] INFO - ================================================================================
+[2025-12-18 16:18:37] INFO - [Fold 3] Train: 286, Valid: 71
+[2025-12-18 16:18:41] INFO - ✅ 使用 CNN 主干: convnext_base.fb_in22k_ft_in1k | feat_dim=1024 | input_res=224
+[2025-12-18 16:18:41] INFO - [Fold 3] 模型: convnext_base.fb_in22k_ft_in1k
+[2025-12-18 16:18:41] INFO - [Fold 3] Params: total=93.74M, trainable=93.74M
+[2025-12-18 16:18:41] INFO - [Fold 3] Input size: 224x224, Grid: (2, 2)
+[2025-12-18 16:18:41] INFO - [Fold 3] 使用多GPU训练: 2 x GPUs
+[2025-12-18 16:18:45] INFO - [Fold 3] SwanLab run_id: zpr4rr7h42bsq9ediwye0
+[2025-12-18 16:18:45] INFO - [Fold 3] 开始训练，起始 epoch=1, stage=1
+[2025-12-18 16:20:40] INFO - [Fold 3] Epoch 1/80 | Stage 1 | TrainLoss 23.6994 | ValLoss 16.7864 | WR2 0.0189 | R2_total 0.100 | R2_gdm 0.009 | LR 5.00e-04
+[2025-12-18 16:20:41] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.0189 (Epoch 1)
+[2025-12-18 16:20:41] INFO - [Fold 3] ✓ 新的最佳 Loss: 16.7864 (Epoch 1)
+[2025-12-18 16:22:38] INFO - [Fold 3] Epoch 2/80 | Stage 1 | TrainLoss 13.2402 | ValLoss 10.9328 | WR2 0.5035 | R2_total 0.676 | R2_gdm 0.706 | LR 5.00e-04
+[2025-12-18 16:22:39] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.5035 (Epoch 2)
+[2025-12-18 16:22:40] INFO - [Fold 3] ✓ 新的最佳 Loss: 10.9328 (Epoch 2)
+[2025-12-18 16:29:20] INFO - [Fold 3] Epoch 3/80 | Stage 1 | TrainLoss 12.4045 | ValLoss 15.7952 | WR2 0.3434 | R2_total 0.459 | R2_gdm 0.526 | LR 5.00e-04
+[2025-12-18 16:31:17] INFO - [Fold 3] Epoch 4/80 | Stage 1 | TrainLoss 13.7192 | ValLoss 13.0721 | WR2 0.2802 | R2_total 0.389 | R2_gdm 0.374 | LR 5.00e-04
+[2025-12-18 16:33:16] INFO - [Fold 3] Epoch 5/80 | Stage 1 | TrainLoss 13.2747 | ValLoss 13.4162 | WR2 0.2276 | R2_total 0.314 | R2_gdm 0.294 | LR 5.00e-04
+[2025-12-18 16:35:12] INFO - [Fold 3] Epoch 6/80 | Stage 1 | TrainLoss 10.8182 | ValLoss 10.3469 | WR2 0.5196 | R2_total 0.709 | R2_gdm 0.742 | LR 5.00e-04
+[2025-12-18 16:35:14] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.5196 (Epoch 6)
+[2025-12-18 16:35:14] INFO - [Fold 3] ✓ 新的最佳 Loss: 10.3469 (Epoch 6)
+[2025-12-18 16:37:10] INFO - [Fold 3] Epoch 7/80 | Stage 1 | TrainLoss 10.8608 | ValLoss 10.3123 | WR2 0.4623 | R2_total 0.613 | R2_gdm 0.599 | LR 5.00e-04
+[2025-12-18 16:37:11] INFO - [Fold 3] ✓ 新的最佳 Loss: 10.3123 (Epoch 7)
+[2025-12-18 16:39:08] INFO - [Fold 3] Epoch 8/80 | Stage 1 | TrainLoss 10.6673 | ValLoss 10.4320 | WR2 0.5335 | R2_total 0.722 | R2_gdm 0.723 | LR 5.00e-04
+[2025-12-18 16:39:09] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.5335 (Epoch 8)
+[2025-12-18 16:41:05] INFO - [Fold 3] Epoch 9/80 | Stage 1 | TrainLoss 10.4379 | ValLoss 12.1039 | WR2 0.4248 | R2_total 0.553 | R2_gdm 0.553 | LR 5.00e-04
+[2025-12-18 16:43:02] INFO - [Fold 3] Epoch 10/80 | Stage 1 | TrainLoss 10.0344 | ValLoss 11.1602 | WR2 0.5329 | R2_total 0.687 | R2_gdm 0.741 | LR 5.00e-04
+[2025-12-18 16:44:58] INFO - [Fold 3] Epoch 11/80 | Stage 1 | TrainLoss 8.9469 | ValLoss 10.1519 | WR2 0.5571 | R2_total 0.693 | R2_gdm 0.757 | LR 5.00e-04
+[2025-12-18 16:45:00] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.5571 (Epoch 11)
+[2025-12-18 16:45:00] INFO - [Fold 3] ✓ 新的最佳 Loss: 10.1519 (Epoch 11)
+[2025-12-18 16:46:56] INFO - [Fold 3] Epoch 12/80 | Stage 1 | TrainLoss 9.4387 | ValLoss 11.6130 | WR2 0.3397 | R2_total 0.398 | R2_gdm 0.455 | LR 5.00e-04
+[2025-12-18 16:48:52] INFO - [Fold 3] Epoch 13/80 | Stage 1 | TrainLoss 9.7744 | ValLoss 9.9734 | WR2 0.5880 | R2_total 0.717 | R2_gdm 0.773 | LR 5.00e-04
+[2025-12-18 16:48:54] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.5880 (Epoch 13)
+[2025-12-18 16:48:54] INFO - [Fold 3] ✓ 新的最佳 Loss: 9.9734 (Epoch 13)
+[2025-12-18 16:50:50] INFO - [Fold 3] Epoch 14/80 | Stage 1 | TrainLoss 8.9729 | ValLoss 12.0052 | WR2 0.4011 | R2_total 0.460 | R2_gdm 0.519 | LR 5.00e-04
+[2025-12-18 16:52:48] INFO - [Fold 3] Epoch 15/80 | Stage 1 | TrainLoss 10.3075 | ValLoss 8.7283 | WR2 0.6261 | R2_total 0.735 | R2_gdm 0.792 | LR 5.00e-04
+[2025-12-18 16:52:50] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.6261 (Epoch 15)
+[2025-12-18 16:52:51] INFO - [Fold 3] ✓ 新的最佳 Loss: 8.7283 (Epoch 15)
+[2025-12-18 16:54:46] INFO - [Fold 3] Epoch 16/80 | Stage 1 | TrainLoss 8.8341 | ValLoss 9.4423 | WR2 0.5592 | R2_total 0.684 | R2_gdm 0.726 | LR 5.00e-04
+[2025-12-18 16:56:43] INFO - [Fold 3] Epoch 17/80 | Stage 1 | TrainLoss 9.2773 | ValLoss 8.9401 | WR2 0.5892 | R2_total 0.733 | R2_gdm 0.723 | LR 5.00e-04
+[2025-12-18 16:58:40] INFO - [Fold 3] Epoch 18/80 | Stage 1 | TrainLoss 8.8318 | ValLoss 9.7899 | WR2 0.5135 | R2_total 0.672 | R2_gdm 0.635 | LR 5.00e-04
+[2025-12-18 17:00:39] INFO - [Fold 3] Epoch 19/80 | Stage 1 | TrainLoss 9.6467 | ValLoss 9.3991 | WR2 0.5824 | R2_total 0.676 | R2_gdm 0.772 | LR 5.00e-04
+[2025-12-18 17:02:36] INFO - [Fold 3] Epoch 20/80 | Stage 1 | TrainLoss 8.7953 | ValLoss 9.1556 | WR2 0.6012 | R2_total 0.711 | R2_gdm 0.722 | LR 5.00e-04
+[2025-12-18 17:02:37] INFO - [Fold 3] 进入 Stage 2（解冻主干）
+[2025-12-18 17:04:45] INFO - [Fold 3] Epoch 21/80 | Stage 2 | TrainLoss 7.2808 | ValLoss 8.6894 | WR2 0.6353 | R2_total 0.746 | R2_gdm 0.801 | LR 9.99e-06
+[2025-12-18 17:04:49] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.6353 (Epoch 21)
+[2025-12-18 17:04:51] INFO - [Fold 3] ✓ 新的最佳 Loss: 8.6894 (Epoch 21)
+[2025-12-18 17:07:00] INFO - [Fold 3] Epoch 22/80 | Stage 2 | TrainLoss 7.2823 | ValLoss 8.7162 | WR2 0.6177 | R2_total 0.724 | R2_gdm 0.757 | LR 9.98e-06
+[2025-12-18 17:09:10] INFO - [Fold 3] Epoch 23/80 | Stage 2 | TrainLoss 7.0556 | ValLoss 8.3525 | WR2 0.6287 | R2_total 0.730 | R2_gdm 0.778 | LR 9.94e-06
+[2025-12-18 17:09:14] INFO - [Fold 3] ✓ 新的最佳 Loss: 8.3525 (Epoch 23)
+[2025-12-18 17:11:23] INFO - [Fold 3] Epoch 24/80 | Stage 2 | TrainLoss 6.9246 | ValLoss 8.3922 | WR2 0.6405 | R2_total 0.744 | R2_gdm 0.797 | LR 9.90e-06
+[2025-12-18 17:11:27] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.6405 (Epoch 24)
+[2025-12-18 17:13:37] INFO - [Fold 3] Epoch 25/80 | Stage 2 | TrainLoss 6.6595 | ValLoss 8.3266 | WR2 0.6446 | R2_total 0.747 | R2_gdm 0.801 | LR 9.85e-06
+[2025-12-18 17:13:41] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.6446 (Epoch 25)
+[2025-12-18 17:13:43] INFO - [Fold 3] ✓ 新的最佳 Loss: 8.3266 (Epoch 25)
+[2025-12-18 17:15:52] INFO - [Fold 3] Epoch 26/80 | Stage 2 | TrainLoss 6.9776 | ValLoss 8.3903 | WR2 0.6269 | R2_total 0.731 | R2_gdm 0.775 | LR 9.78e-06
+[2025-12-18 17:18:03] INFO - [Fold 3] Epoch 27/80 | Stage 2 | TrainLoss 7.0465 | ValLoss 8.1745 | WR2 0.6403 | R2_total 0.742 | R2_gdm 0.792 | LR 9.70e-06
+[2025-12-18 17:18:06] INFO - [Fold 3] ✓ 新的最佳 Loss: 8.1745 (Epoch 27)
+[2025-12-18 17:20:15] INFO - [Fold 3] Epoch 28/80 | Stage 2 | TrainLoss 7.1612 | ValLoss 8.2698 | WR2 0.6331 | R2_total 0.733 | R2_gdm 0.779 | LR 9.61e-06
+[2025-12-18 17:22:25] INFO - [Fold 3] Epoch 29/80 | Stage 2 | TrainLoss 6.5589 | ValLoss 8.1318 | WR2 0.6489 | R2_total 0.752 | R2_gdm 0.809 | LR 9.51e-06
+[2025-12-18 17:22:29] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.6489 (Epoch 29)
+[2025-12-18 17:22:31] INFO - [Fold 3] ✓ 新的最佳 Loss: 8.1318 (Epoch 29)
+[2025-12-18 17:24:40] INFO - [Fold 3] Epoch 30/80 | Stage 2 | TrainLoss 6.7558 | ValLoss 8.2080 | WR2 0.6385 | R2_total 0.741 | R2_gdm 0.786 | LR 9.40e-06
+[2025-12-18 17:26:51] INFO - [Fold 3] Epoch 31/80 | Stage 2 | TrainLoss 6.5571 | ValLoss 8.4392 | WR2 0.6437 | R2_total 0.748 | R2_gdm 0.810 | LR 9.27e-06
+[2025-12-18 17:29:02] INFO - [Fold 3] Epoch 32/80 | Stage 2 | TrainLoss 7.0387 | ValLoss 8.3784 | WR2 0.6386 | R2_total 0.745 | R2_gdm 0.804 | LR 9.14e-06
+[2025-12-18 17:31:13] INFO - [Fold 3] Epoch 33/80 | Stage 2 | TrainLoss 6.4023 | ValLoss 8.1015 | WR2 0.6470 | R2_total 0.749 | R2_gdm 0.806 | LR 9.00e-06
+[2025-12-18 17:31:16] INFO - [Fold 3] ✓ 新的最佳 Loss: 8.1015 (Epoch 33)
+[2025-12-18 17:33:26] INFO - [Fold 3] Epoch 34/80 | Stage 2 | TrainLoss 6.6264 | ValLoss 8.1776 | WR2 0.6394 | R2_total 0.740 | R2_gdm 0.789 | LR 8.84e-06
+[2025-12-18 17:35:37] INFO - [Fold 3] Epoch 35/80 | Stage 2 | TrainLoss 6.2287 | ValLoss 8.2406 | WR2 0.6318 | R2_total 0.733 | R2_gdm 0.780 | LR 8.68e-06
+[2025-12-18 17:37:48] INFO - [Fold 3] Epoch 36/80 | Stage 2 | TrainLoss 5.9535 | ValLoss 8.1863 | WR2 0.6311 | R2_total 0.733 | R2_gdm 0.777 | LR 8.51e-06
+[2025-12-18 17:40:00] INFO - [Fold 3] Epoch 37/80 | Stage 2 | TrainLoss 6.2235 | ValLoss 8.3350 | WR2 0.6313 | R2_total 0.732 | R2_gdm 0.787 | LR 8.33e-06
+[2025-12-18 17:42:11] INFO - [Fold 3] Epoch 38/80 | Stage 2 | TrainLoss 6.3744 | ValLoss 8.1747 | WR2 0.6427 | R2_total 0.743 | R2_gdm 0.797 | LR 8.15e-06
+[2025-12-18 17:44:21] INFO - [Fold 3] Epoch 39/80 | Stage 2 | TrainLoss 5.8337 | ValLoss 8.2038 | WR2 0.6542 | R2_total 0.757 | R2_gdm 0.819 | LR 7.95e-06
+[2025-12-18 17:44:24] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.6542 (Epoch 39)
+[2025-12-18 17:46:34] INFO - [Fold 3] Epoch 40/80 | Stage 2 | TrainLoss 6.1730 | ValLoss 8.3036 | WR2 0.6270 | R2_total 0.727 | R2_gdm 0.764 | LR 7.75e-06
+[2025-12-18 17:48:44] INFO - [Fold 3] Epoch 41/80 | Stage 2 | TrainLoss 5.8895 | ValLoss 8.3220 | WR2 0.6181 | R2_total 0.712 | R2_gdm 0.752 | LR 7.54e-06
+[2025-12-18 17:50:56] INFO - [Fold 3] Epoch 42/80 | Stage 2 | TrainLoss 6.4460 | ValLoss 8.1071 | WR2 0.6568 | R2_total 0.755 | R2_gdm 0.822 | LR 7.33e-06
+[2025-12-18 17:51:00] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.6568 (Epoch 42)
+[2025-12-18 17:53:08] INFO - [Fold 3] Epoch 43/80 | Stage 2 | TrainLoss 6.1168 | ValLoss 7.9413 | WR2 0.6449 | R2_total 0.741 | R2_gdm 0.796 | LR 7.11e-06
+[2025-12-18 17:53:12] INFO - [Fold 3] ✓ 新的最佳 Loss: 7.9413 (Epoch 43)
+[2025-12-18 17:55:22] INFO - [Fold 3] Epoch 44/80 | Stage 2 | TrainLoss 6.1909 | ValLoss 8.0504 | WR2 0.6363 | R2_total 0.733 | R2_gdm 0.786 | LR 6.89e-06
+[2025-12-18 17:57:34] INFO - [Fold 3] Epoch 45/80 | Stage 2 | TrainLoss 6.0764 | ValLoss 8.1205 | WR2 0.6451 | R2_total 0.742 | R2_gdm 0.803 | LR 6.66e-06
+[2025-12-18 17:59:45] INFO - [Fold 3] Epoch 46/80 | Stage 2 | TrainLoss 6.0805 | ValLoss 8.1103 | WR2 0.6445 | R2_total 0.743 | R2_gdm 0.803 | LR 6.44e-06
+[2025-12-18 18:01:56] INFO - [Fold 3] Epoch 47/80 | Stage 2 | TrainLoss 6.1896 | ValLoss 8.0075 | WR2 0.6372 | R2_total 0.734 | R2_gdm 0.783 | LR 6.20e-06
+[2025-12-18 18:04:07] INFO - [Fold 3] Epoch 48/80 | Stage 2 | TrainLoss 5.9203 | ValLoss 8.1285 | WR2 0.6217 | R2_total 0.715 | R2_gdm 0.757 | LR 5.97e-06
+[2025-12-18 18:06:18] INFO - [Fold 3] Epoch 49/80 | Stage 2 | TrainLoss 5.9592 | ValLoss 8.0011 | WR2 0.6458 | R2_total 0.744 | R2_gdm 0.799 | LR 5.74e-06
+[2025-12-18 18:08:30] INFO - [Fold 3] Epoch 50/80 | Stage 2 | TrainLoss 5.7680 | ValLoss 7.8581 | WR2 0.6546 | R2_total 0.753 | R2_gdm 0.810 | LR 5.50e-06
+[2025-12-18 18:08:33] INFO - [Fold 3] ✓ 新的最佳 Loss: 7.8581 (Epoch 50)
+[2025-12-18 18:10:44] INFO - [Fold 3] Epoch 51/80 | Stage 2 | TrainLoss 5.9091 | ValLoss 7.8975 | WR2 0.6531 | R2_total 0.751 | R2_gdm 0.803 | LR 5.26e-06
+[2025-12-18 18:12:58] INFO - [Fold 3] Epoch 52/80 | Stage 2 | TrainLoss 5.9141 | ValLoss 8.0695 | WR2 0.6490 | R2_total 0.750 | R2_gdm 0.806 | LR 5.03e-06
+[2025-12-18 18:15:10] INFO - [Fold 3] Epoch 53/80 | Stage 2 | TrainLoss 5.8042 | ValLoss 8.0844 | WR2 0.6409 | R2_total 0.740 | R2_gdm 0.786 | LR 4.80e-06
+[2025-12-18 18:17:20] INFO - [Fold 3] Epoch 54/80 | Stage 2 | TrainLoss 5.9043 | ValLoss 7.9088 | WR2 0.6492 | R2_total 0.751 | R2_gdm 0.794 | LR 4.56e-06
+[2025-12-18 18:19:32] INFO - [Fold 3] Epoch 55/80 | Stage 2 | TrainLoss 5.9626 | ValLoss 8.0157 | WR2 0.6376 | R2_total 0.737 | R2_gdm 0.776 | LR 4.34e-06
+[2025-12-18 18:21:42] INFO - [Fold 3] Epoch 56/80 | Stage 2 | TrainLoss 5.8600 | ValLoss 7.7869 | WR2 0.6628 | R2_total 0.766 | R2_gdm 0.820 | LR 4.11e-06
+[2025-12-18 18:21:46] INFO - [Fold 3] ✓ 新的最佳 WR2: 0.6628 (Epoch 56)
+[2025-12-18 18:21:48] INFO - [Fold 3] ✓ 新的最佳 Loss: 7.7869 (Epoch 56)
+[2025-12-18 18:23:57] INFO - [Fold 3] Epoch 57/80 | Stage 2 | TrainLoss 5.5856 | ValLoss 8.0799 | WR2 0.6337 | R2_total 0.729 | R2_gdm 0.775 | LR 3.89e-06
+[2025-12-18 18:26:09] INFO - [Fold 3] Epoch 58/80 | Stage 2 | TrainLoss 5.5493 | ValLoss 7.9108 | WR2 0.6536 | R2_total 0.754 | R2_gdm 0.809 | LR 3.67e-06
+[2025-12-18 18:28:20] INFO - [Fold 3] Epoch 59/80 | Stage 2 | TrainLoss 5.7599 | ValLoss 7.9149 | WR2 0.6512 | R2_total 0.751 | R2_gdm 0.807 | LR 3.46e-06
+[2025-12-18 18:30:30] INFO - [Fold 3] Epoch 60/80 | Stage 2 | TrainLoss 5.9681 | ValLoss 7.8615 | WR2 0.6600 | R2_total 0.761 | R2_gdm 0.823 | LR 3.25e-06
+[2025-12-18 18:32:42] INFO - [Fold 3] Epoch 61/80 | Stage 2 | TrainLoss 5.5562 | ValLoss 8.2178 | WR2 0.6184 | R2_total 0.716 | R2_gdm 0.750 | LR 3.05e-06
+[2025-12-18 18:34:54] INFO - [Fold 3] Epoch 62/80 | Stage 2 | TrainLoss 5.7975 | ValLoss 8.0223 | WR2 0.6385 | R2_total 0.735 | R2_gdm 0.786 | LR 2.85e-06
+[2025-12-18 18:37:04] INFO - [Fold 3] Epoch 63/80 | Stage 2 | TrainLoss 5.4343 | ValLoss 7.8729 | WR2 0.6498 | R2_total 0.748 | R2_gdm 0.800 | LR 2.67e-06
+[2025-12-18 18:39:14] INFO - [Fold 3] Epoch 64/80 | Stage 2 | TrainLoss 5.6415 | ValLoss 7.8145 | WR2 0.6560 | R2_total 0.755 | R2_gdm 0.809 | LR 2.49e-06
+[2025-12-18 18:41:26] INFO - [Fold 3] Epoch 65/80 | Stage 2 | TrainLoss 5.4450 | ValLoss 7.9625 | WR2 0.6472 | R2_total 0.746 | R2_gdm 0.798 | LR 2.32e-06
+[2025-12-18 18:43:36] INFO - [Fold 3] Epoch 66/80 | Stage 2 | TrainLoss 5.3799 | ValLoss 7.9935 | WR2 0.6478 | R2_total 0.744 | R2_gdm 0.801 | LR 2.16e-06
+[2025-12-18 18:45:48] INFO - [Fold 3] Epoch 67/80 | Stage 2 | TrainLoss 5.5267 | ValLoss 8.0538 | WR2 0.6379 | R2_total 0.731 | R2_gdm 0.785 | LR 2.00e-06
+[2025-12-18 20:10:25] INFO - [Fold 3] Epoch 68/80 | Stage 2 | TrainLoss 5.5878 | ValLoss 7.8917 | WR2 0.6495 | R2_total 0.745 | R2_gdm 0.804 | LR 1.86e-06
+[2025-12-18 20:12:37] INFO - [Fold 3] Epoch 69/80 | Stage 2 | TrainLoss 5.4852 | ValLoss 7.8257 | WR2 0.6508 | R2_total 0.748 | R2_gdm 0.805 | LR 1.73e-06
+[2025-12-18 20:14:48] INFO - [Fold 3] Epoch 70/80 | Stage 2 | TrainLoss 5.3451 | ValLoss 7.8683 | WR2 0.6411 | R2_total 0.735 | R2_gdm 0.789 | LR 1.60e-06
+[2025-12-18 20:16:59] INFO - [Fold 3] Epoch 71/80 | Stage 2 | TrainLoss 5.1249 | ValLoss 7.9097 | WR2 0.6476 | R2_total 0.742 | R2_gdm 0.804 | LR 1.49e-06
+[2025-12-18 20:17:01] INFO - [Fold 3] 早停: 15 epochs 无改善
+[2025-12-18 20:17:01] INFO - [Fold 3] ✓ 训练历史已保存: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/Tile+FiLM/fold3_metrics.csv
+[2025-12-18 20:17:01] INFO - ================================================================================
+[2025-12-18 20:17:01] INFO - [Fold 3] 训练完成总结
+[2025-12-18 20:17:01] INFO -   最佳 WR2: 0.6628
+[2025-12-18 20:17:01] INFO -   最佳 Loss: 7.7869
+[2025-12-18 20:17:01] INFO -   Checkpoints: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/Tile+FiLM/checkpoints/fold3
+[2025-12-18 20:17:01] INFO - ================================================================================
+[2025-12-18 20:17:02] INFO - [Fold 3] SwanLab run 已结束
+[2025-12-18 20:17:02] INFO - ✓ Fold 3 训练完成
+[2025-12-18 20:17:03] INFO - 等待 3 秒后继续下一个 fold...
+[2025-12-18 20:17:06] INFO - ================================================================================
+[2025-12-18 20:17:06] INFO - 开始训练 Fold 4/4
+[2025-12-18 20:17:06] INFO - ================================================================================
+[2025-12-18 20:17:06] INFO - [Fold 4] Train: 286, Valid: 71
+[2025-12-18 20:17:10] INFO - ✅ 使用 CNN 主干: convnext_base.fb_in22k_ft_in1k | feat_dim=1024 | input_res=224
+[2025-12-18 20:17:10] INFO - [Fold 4] 模型: convnext_base.fb_in22k_ft_in1k
+[2025-12-18 20:17:10] INFO - [Fold 4] Params: total=93.74M, trainable=93.74M
+[2025-12-18 20:17:10] INFO - [Fold 4] Input size: 224x224, Grid: (2, 2)
+[2025-12-18 20:17:10] INFO - [Fold 4] 使用多GPU训练: 2 x GPUs
+[2025-12-18 20:17:12] INFO - [Fold 4] SwanLab run_id: 1651s85ugyjthjhqbekcu
+[2025-12-18 20:17:12] INFO - [Fold 4] 开始训练，起始 epoch=1, stage=1
+[2025-12-18 20:19:10] INFO - [Fold 4] Epoch 1/80 | Stage 1 | TrainLoss 22.9489 | ValLoss 14.7995 | WR2 0.0725 | R2_total 0.099 | R2_gdm 0.066 | LR 5.00e-04
+[2025-12-18 20:19:11] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.0725 (Epoch 1)
+[2025-12-18 20:19:11] INFO - [Fold 4] ✓ 新的最佳 Loss: 14.7995 (Epoch 1)
+[2025-12-18 20:21:09] INFO - [Fold 4] Epoch 2/80 | Stage 1 | TrainLoss 13.3670 | ValLoss 10.6298 | WR2 0.4427 | R2_total 0.578 | R2_gdm 0.684 | LR 5.00e-04
+[2025-12-18 20:21:10] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.4427 (Epoch 2)
+[2025-12-18 20:21:11] INFO - [Fold 4] ✓ 新的最佳 Loss: 10.6298 (Epoch 2)
+[2025-12-18 20:23:09] INFO - [Fold 4] Epoch 3/80 | Stage 1 | TrainLoss 11.2894 | ValLoss 12.1847 | WR2 0.3442 | R2_total 0.522 | R2_gdm 0.545 | LR 5.00e-04
+[2025-12-18 20:25:05] INFO - [Fold 4] Epoch 4/80 | Stage 1 | TrainLoss 10.8947 | ValLoss 11.2125 | WR2 0.3773 | R2_total 0.506 | R2_gdm 0.581 | LR 5.00e-04
+[2025-12-18 20:27:02] INFO - [Fold 4] Epoch 5/80 | Stage 1 | TrainLoss 10.6455 | ValLoss 10.8543 | WR2 0.3925 | R2_total 0.503 | R2_gdm 0.683 | LR 5.00e-04
+[2025-12-18 20:29:00] INFO - [Fold 4] Epoch 6/80 | Stage 1 | TrainLoss 11.7691 | ValLoss 10.5705 | WR2 0.4615 | R2_total 0.665 | R2_gdm 0.681 | LR 5.00e-04
+[2025-12-18 20:29:02] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.4615 (Epoch 6)
+[2025-12-18 20:29:02] INFO - [Fold 4] ✓ 新的最佳 Loss: 10.5705 (Epoch 6)
+[2025-12-18 20:31:01] INFO - [Fold 4] Epoch 7/80 | Stage 1 | TrainLoss 10.2664 | ValLoss 9.9772 | WR2 0.4902 | R2_total 0.664 | R2_gdm 0.735 | LR 5.00e-04
+[2025-12-18 20:31:02] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.4902 (Epoch 7)
+[2025-12-18 20:31:03] INFO - [Fold 4] ✓ 新的最佳 Loss: 9.9772 (Epoch 7)
+[2025-12-18 20:32:58] INFO - [Fold 4] Epoch 8/80 | Stage 1 | TrainLoss 10.2236 | ValLoss 10.6834 | WR2 0.4860 | R2_total 0.664 | R2_gdm 0.739 | LR 5.00e-04
+[2025-12-18 20:34:57] INFO - [Fold 4] Epoch 9/80 | Stage 1 | TrainLoss 9.8790 | ValLoss 9.9654 | WR2 0.4812 | R2_total 0.650 | R2_gdm 0.762 | LR 5.00e-04
+[2025-12-18 20:34:58] INFO - [Fold 4] ✓ 新的最佳 Loss: 9.9654 (Epoch 9)
+[2025-12-18 20:36:55] INFO - [Fold 4] Epoch 10/80 | Stage 1 | TrainLoss 8.9337 | ValLoss 9.6255 | WR2 0.5218 | R2_total 0.702 | R2_gdm 0.738 | LR 5.00e-04
+[2025-12-18 20:36:57] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.5218 (Epoch 10)
+[2025-12-18 20:36:57] INFO - [Fold 4] ✓ 新的最佳 Loss: 9.6255 (Epoch 10)
+[2025-12-18 20:38:54] INFO - [Fold 4] Epoch 11/80 | Stage 1 | TrainLoss 8.9240 | ValLoss 10.1360 | WR2 0.4951 | R2_total 0.645 | R2_gdm 0.706 | LR 5.00e-04
+[2025-12-18 20:40:52] INFO - [Fold 4] Epoch 12/80 | Stage 1 | TrainLoss 8.8307 | ValLoss 11.6648 | WR2 0.3144 | R2_total 0.580 | R2_gdm 0.393 | LR 5.00e-04
+[2025-12-18 20:42:50] INFO - [Fold 4] Epoch 13/80 | Stage 1 | TrainLoss 9.1386 | ValLoss 9.3432 | WR2 0.5317 | R2_total 0.706 | R2_gdm 0.729 | LR 5.00e-04
+[2025-12-18 20:42:52] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.5317 (Epoch 13)
+[2025-12-18 20:42:52] INFO - [Fold 4] ✓ 新的最佳 Loss: 9.3432 (Epoch 13)
+[2025-12-18 20:44:51] INFO - [Fold 4] Epoch 14/80 | Stage 1 | TrainLoss 8.1272 | ValLoss 9.9974 | WR2 0.5198 | R2_total 0.657 | R2_gdm 0.762 | LR 5.00e-04
+[2025-12-18 20:46:48] INFO - [Fold 4] Epoch 15/80 | Stage 1 | TrainLoss 8.9517 | ValLoss 9.8291 | WR2 0.5310 | R2_total 0.669 | R2_gdm 0.806 | LR 5.00e-04
+[2025-12-18 20:48:46] INFO - [Fold 4] Epoch 16/80 | Stage 1 | TrainLoss 8.4654 | ValLoss 10.0077 | WR2 0.5367 | R2_total 0.671 | R2_gdm 0.738 | LR 5.00e-04
+[2025-12-18 20:48:47] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.5367 (Epoch 16)
+[2025-12-18 20:50:44] INFO - [Fold 4] Epoch 17/80 | Stage 1 | TrainLoss 8.5870 | ValLoss 9.6403 | WR2 0.5028 | R2_total 0.644 | R2_gdm 0.749 | LR 5.00e-04
+[2025-12-18 20:52:42] INFO - [Fold 4] Epoch 18/80 | Stage 1 | TrainLoss 7.7015 | ValLoss 9.8709 | WR2 0.5033 | R2_total 0.645 | R2_gdm 0.694 | LR 5.00e-04
+[2025-12-18 20:54:40] INFO - [Fold 4] Epoch 19/80 | Stage 1 | TrainLoss 8.2839 | ValLoss 10.2984 | WR2 0.4774 | R2_total 0.605 | R2_gdm 0.700 | LR 5.00e-04
+[2025-12-18 20:56:38] INFO - [Fold 4] Epoch 20/80 | Stage 1 | TrainLoss 8.5062 | ValLoss 9.4259 | WR2 0.5445 | R2_total 0.695 | R2_gdm 0.741 | LR 5.00e-04
+[2025-12-18 20:56:40] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.5445 (Epoch 20)
+[2025-12-18 20:56:40] INFO - [Fold 4] 进入 Stage 2（解冻主干）
+[2025-12-18 20:58:50] INFO - [Fold 4] Epoch 21/80 | Stage 2 | TrainLoss 7.5640 | ValLoss 9.5818 | WR2 0.5317 | R2_total 0.705 | R2_gdm 0.714 | LR 9.99e-06
+[2025-12-18 21:01:03] INFO - [Fold 4] Epoch 22/80 | Stage 2 | TrainLoss 7.0345 | ValLoss 8.9672 | WR2 0.5694 | R2_total 0.720 | R2_gdm 0.776 | LR 9.98e-06
+[2025-12-18 21:01:06] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.5694 (Epoch 22)
+[2025-12-18 21:01:08] INFO - [Fold 4] ✓ 新的最佳 Loss: 8.9672 (Epoch 22)
+[2025-12-18 21:03:18] INFO - [Fold 4] Epoch 23/80 | Stage 2 | TrainLoss 6.9147 | ValLoss 8.8505 | WR2 0.5677 | R2_total 0.726 | R2_gdm 0.783 | LR 9.94e-06
+[2025-12-18 21:03:22] INFO - [Fold 4] ✓ 新的最佳 Loss: 8.8505 (Epoch 23)
+[2025-12-18 21:05:32] INFO - [Fold 4] Epoch 24/80 | Stage 2 | TrainLoss 6.7637 | ValLoss 9.2525 | WR2 0.5573 | R2_total 0.723 | R2_gdm 0.764 | LR 9.90e-06
+[2025-12-18 21:07:42] INFO - [Fold 4] Epoch 25/80 | Stage 2 | TrainLoss 6.4502 | ValLoss 8.9377 | WR2 0.5603 | R2_total 0.710 | R2_gdm 0.769 | LR 9.85e-06
+[2025-12-18 21:09:52] INFO - [Fold 4] Epoch 26/80 | Stage 2 | TrainLoss 6.2860 | ValLoss 8.9990 | WR2 0.5607 | R2_total 0.720 | R2_gdm 0.781 | LR 9.78e-06
+[2025-12-18 21:12:04] INFO - [Fold 4] Epoch 27/80 | Stage 2 | TrainLoss 6.8483 | ValLoss 9.0645 | WR2 0.5748 | R2_total 0.742 | R2_gdm 0.782 | LR 9.70e-06
+[2025-12-18 21:12:07] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.5748 (Epoch 27)
+[2025-12-18 21:14:16] INFO - [Fold 4] Epoch 28/80 | Stage 2 | TrainLoss 6.3537 | ValLoss 8.9792 | WR2 0.5791 | R2_total 0.742 | R2_gdm 0.787 | LR 9.61e-06
+[2025-12-18 21:14:20] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.5791 (Epoch 28)
+[2025-12-18 21:16:30] INFO - [Fold 4] Epoch 29/80 | Stage 2 | TrainLoss 6.3031 | ValLoss 8.9555 | WR2 0.5737 | R2_total 0.739 | R2_gdm 0.776 | LR 9.51e-06
+[2025-12-18 21:18:42] INFO - [Fold 4] Epoch 30/80 | Stage 2 | TrainLoss 6.5119 | ValLoss 9.2912 | WR2 0.5628 | R2_total 0.734 | R2_gdm 0.778 | LR 9.40e-06
+[2025-12-18 21:20:54] INFO - [Fold 4] Epoch 31/80 | Stage 2 | TrainLoss 6.6161 | ValLoss 8.9050 | WR2 0.5818 | R2_total 0.734 | R2_gdm 0.790 | LR 9.27e-06
+[2025-12-18 21:20:58] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.5818 (Epoch 31)
+[2025-12-18 21:23:06] INFO - [Fold 4] Epoch 32/80 | Stage 2 | TrainLoss 6.1563 | ValLoss 8.9479 | WR2 0.5875 | R2_total 0.747 | R2_gdm 0.788 | LR 9.14e-06
+[2025-12-18 21:23:10] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.5875 (Epoch 32)
+[2025-12-18 21:25:20] INFO - [Fold 4] Epoch 33/80 | Stage 2 | TrainLoss 5.9552 | ValLoss 8.5909 | WR2 0.5951 | R2_total 0.737 | R2_gdm 0.784 | LR 9.00e-06
+[2025-12-18 21:25:24] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.5951 (Epoch 33)
+[2025-12-18 21:25:26] INFO - [Fold 4] ✓ 新的最佳 Loss: 8.5909 (Epoch 33)
+[2025-12-18 21:27:35] INFO - [Fold 4] Epoch 34/80 | Stage 2 | TrainLoss 6.4055 | ValLoss 8.9901 | WR2 0.5776 | R2_total 0.730 | R2_gdm 0.760 | LR 8.84e-06
+[2025-12-18 21:29:47] INFO - [Fold 4] Epoch 35/80 | Stage 2 | TrainLoss 5.9439 | ValLoss 8.8351 | WR2 0.5847 | R2_total 0.743 | R2_gdm 0.776 | LR 8.68e-06
+[2025-12-18 21:31:57] INFO - [Fold 4] Epoch 36/80 | Stage 2 | TrainLoss 6.0507 | ValLoss 9.4580 | WR2 0.5593 | R2_total 0.728 | R2_gdm 0.758 | LR 8.51e-06
+[2025-12-18 21:34:08] INFO - [Fold 4] Epoch 37/80 | Stage 2 | TrainLoss 6.2694 | ValLoss 8.9689 | WR2 0.5737 | R2_total 0.735 | R2_gdm 0.780 | LR 8.33e-06
+[2025-12-18 21:36:20] INFO - [Fold 4] Epoch 38/80 | Stage 2 | TrainLoss 6.1153 | ValLoss 9.1221 | WR2 0.5662 | R2_total 0.715 | R2_gdm 0.757 | LR 8.15e-06
+[2025-12-18 21:38:32] INFO - [Fold 4] Epoch 39/80 | Stage 2 | TrainLoss 6.2023 | ValLoss 8.7742 | WR2 0.5778 | R2_total 0.725 | R2_gdm 0.785 | LR 7.95e-06
+[2025-12-18 21:40:45] INFO - [Fold 4] Epoch 40/80 | Stage 2 | TrainLoss 5.9783 | ValLoss 8.6722 | WR2 0.5913 | R2_total 0.744 | R2_gdm 0.795 | LR 7.75e-06
+[2025-12-18 21:42:57] INFO - [Fold 4] Epoch 41/80 | Stage 2 | TrainLoss 5.9720 | ValLoss 8.7654 | WR2 0.5897 | R2_total 0.747 | R2_gdm 0.786 | LR 7.54e-06
+[2025-12-18 21:45:07] INFO - [Fold 4] Epoch 42/80 | Stage 2 | TrainLoss 5.9247 | ValLoss 8.5155 | WR2 0.5965 | R2_total 0.735 | R2_gdm 0.773 | LR 7.33e-06
+[2025-12-18 21:45:11] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.5965 (Epoch 42)
+[2025-12-18 21:45:13] INFO - [Fold 4] ✓ 新的最佳 Loss: 8.5155 (Epoch 42)
+[2025-12-18 21:47:21] INFO - [Fold 4] Epoch 43/80 | Stage 2 | TrainLoss 6.1422 | ValLoss 9.0163 | WR2 0.5696 | R2_total 0.709 | R2_gdm 0.763 | LR 7.11e-06
+[2025-12-18 21:49:31] INFO - [Fold 4] Epoch 44/80 | Stage 2 | TrainLoss 6.3184 | ValLoss 8.5393 | WR2 0.6001 | R2_total 0.757 | R2_gdm 0.797 | LR 6.89e-06
+[2025-12-18 21:49:35] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.6001 (Epoch 44)
+[2025-12-18 21:51:45] INFO - [Fold 4] Epoch 45/80 | Stage 2 | TrainLoss 5.9806 | ValLoss 8.7544 | WR2 0.5856 | R2_total 0.733 | R2_gdm 0.781 | LR 6.66e-06
+[2025-12-18 21:53:57] INFO - [Fold 4] Epoch 46/80 | Stage 2 | TrainLoss 5.7757 | ValLoss 8.7595 | WR2 0.5845 | R2_total 0.729 | R2_gdm 0.792 | LR 6.44e-06
+[2025-12-18 21:56:07] INFO - [Fold 4] Epoch 47/80 | Stage 2 | TrainLoss 5.9277 | ValLoss 9.0578 | WR2 0.5777 | R2_total 0.743 | R2_gdm 0.775 | LR 6.20e-06
+[2025-12-18 21:58:18] INFO - [Fold 4] Epoch 48/80 | Stage 2 | TrainLoss 5.5993 | ValLoss 8.9968 | WR2 0.5744 | R2_total 0.736 | R2_gdm 0.779 | LR 5.97e-06
+[2025-12-18 22:00:29] INFO - [Fold 4] Epoch 49/80 | Stage 2 | TrainLoss 5.6156 | ValLoss 8.6281 | WR2 0.5958 | R2_total 0.759 | R2_gdm 0.804 | LR 5.74e-06
+[2025-12-18 22:02:41] INFO - [Fold 4] Epoch 50/80 | Stage 2 | TrainLoss 5.5814 | ValLoss 8.8362 | WR2 0.5833 | R2_total 0.745 | R2_gdm 0.778 | LR 5.50e-06
+[2025-12-18 22:04:54] INFO - [Fold 4] Epoch 51/80 | Stage 2 | TrainLoss 5.6879 | ValLoss 9.0929 | WR2 0.5810 | R2_total 0.743 | R2_gdm 0.788 | LR 5.26e-06
+[2025-12-18 22:07:05] INFO - [Fold 4] Epoch 52/80 | Stage 2 | TrainLoss 5.6851 | ValLoss 8.7265 | WR2 0.5962 | R2_total 0.754 | R2_gdm 0.801 | LR 5.03e-06
+[2025-12-18 22:09:16] INFO - [Fold 4] Epoch 53/80 | Stage 2 | TrainLoss 5.1686 | ValLoss 8.7594 | WR2 0.5902 | R2_total 0.740 | R2_gdm 0.767 | LR 4.80e-06
+[2025-12-18 22:11:27] INFO - [Fold 4] Epoch 54/80 | Stage 2 | TrainLoss 5.7929 | ValLoss 8.6775 | WR2 0.6000 | R2_total 0.759 | R2_gdm 0.804 | LR 4.56e-06
+[2025-12-18 22:13:38] INFO - [Fold 4] Epoch 55/80 | Stage 2 | TrainLoss 5.5063 | ValLoss 8.6566 | WR2 0.6048 | R2_total 0.763 | R2_gdm 0.804 | LR 4.34e-06
+[2025-12-18 22:13:41] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.6048 (Epoch 55)
+[2025-12-18 22:15:51] INFO - [Fold 4] Epoch 56/80 | Stage 2 | TrainLoss 5.5613 | ValLoss 8.4804 | WR2 0.6113 | R2_total 0.774 | R2_gdm 0.808 | LR 4.11e-06
+[2025-12-18 22:15:54] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.6113 (Epoch 56)
+[2025-12-18 22:15:56] INFO - [Fold 4] ✓ 新的最佳 Loss: 8.4804 (Epoch 56)
+[2025-12-18 22:18:06] INFO - [Fold 4] Epoch 57/80 | Stage 2 | TrainLoss 5.5869 | ValLoss 8.5456 | WR2 0.6066 | R2_total 0.767 | R2_gdm 0.804 | LR 3.89e-06
+[2025-12-18 22:20:18] INFO - [Fold 4] Epoch 58/80 | Stage 2 | TrainLoss 5.3378 | ValLoss 8.6623 | WR2 0.6025 | R2_total 0.760 | R2_gdm 0.799 | LR 3.67e-06
+[2025-12-18 22:22:31] INFO - [Fold 4] Epoch 59/80 | Stage 2 | TrainLoss 5.3785 | ValLoss 8.8070 | WR2 0.5937 | R2_total 0.745 | R2_gdm 0.783 | LR 3.46e-06
+[2025-12-18 22:24:42] INFO - [Fold 4] Epoch 60/80 | Stage 2 | TrainLoss 5.2901 | ValLoss 8.5582 | WR2 0.6085 | R2_total 0.767 | R2_gdm 0.809 | LR 3.25e-06
+[2025-12-18 22:26:53] INFO - [Fold 4] Epoch 61/80 | Stage 2 | TrainLoss 5.2408 | ValLoss 8.4169 | WR2 0.6135 | R2_total 0.776 | R2_gdm 0.806 | LR 3.05e-06
+[2025-12-18 22:26:57] INFO - [Fold 4] ✓ 新的最佳 WR2: 0.6135 (Epoch 61)
+[2025-12-18 22:26:59] INFO - [Fold 4] ✓ 新的最佳 Loss: 8.4169 (Epoch 61)
+[2025-12-18 22:29:08] INFO - [Fold 4] Epoch 62/80 | Stage 2 | TrainLoss 4.9679 | ValLoss 8.6616 | WR2 0.6020 | R2_total 0.769 | R2_gdm 0.786 | LR 2.85e-06
+[2025-12-18 22:31:19] INFO - [Fold 4] Epoch 63/80 | Stage 2 | TrainLoss 4.9581 | ValLoss 8.6625 | WR2 0.6013 | R2_total 0.767 | R2_gdm 0.785 | LR 2.67e-06
+[2025-12-18 22:33:31] INFO - [Fold 4] Epoch 64/80 | Stage 2 | TrainLoss 5.4295 | ValLoss 8.6280 | WR2 0.6034 | R2_total 0.763 | R2_gdm 0.785 | LR 2.49e-06
+[2025-12-18 22:35:44] INFO - [Fold 4] Epoch 65/80 | Stage 2 | TrainLoss 5.3222 | ValLoss 8.4173 | WR2 0.6127 | R2_total 0.772 | R2_gdm 0.803 | LR 2.32e-06
+[2025-12-18 22:37:55] INFO - [Fold 4] Epoch 66/80 | Stage 2 | TrainLoss 4.8727 | ValLoss 8.5698 | WR2 0.6053 | R2_total 0.765 | R2_gdm 0.790 | LR 2.16e-06
+[2025-12-18 22:40:08] INFO - [Fold 4] Epoch 67/80 | Stage 2 | TrainLoss 4.9994 | ValLoss 8.5480 | WR2 0.6073 | R2_total 0.763 | R2_gdm 0.791 | LR 2.00e-06
+[2025-12-18 22:42:20] INFO - [Fold 4] Epoch 68/80 | Stage 2 | TrainLoss 5.2912 | ValLoss 8.6256 | WR2 0.6062 | R2_total 0.766 | R2_gdm 0.795 | LR 1.86e-06
+[2025-12-18 22:44:33] INFO - [Fold 4] Epoch 69/80 | Stage 2 | TrainLoss 5.0901 | ValLoss 8.5007 | WR2 0.6100 | R2_total 0.766 | R2_gdm 0.798 | LR 1.73e-06
+[2025-12-18 22:46:46] INFO - [Fold 4] Epoch 70/80 | Stage 2 | TrainLoss 5.1562 | ValLoss 8.6875 | WR2 0.6011 | R2_total 0.755 | R2_gdm 0.779 | LR 1.60e-06
+[2025-12-18 22:48:58] INFO - [Fold 4] Epoch 71/80 | Stage 2 | TrainLoss 5.4965 | ValLoss 8.7510 | WR2 0.5995 | R2_total 0.754 | R2_gdm 0.779 | LR 1.49e-06
+[2025-12-18 22:51:09] INFO - [Fold 4] Epoch 72/80 | Stage 2 | TrainLoss 5.0718 | ValLoss 8.6043 | WR2 0.6050 | R2_total 0.758 | R2_gdm 0.787 | LR 1.39e-06
+[2025-12-18 22:53:22] INFO - [Fold 4] Epoch 73/80 | Stage 2 | TrainLoss 5.2488 | ValLoss 8.5926 | WR2 0.6071 | R2_total 0.764 | R2_gdm 0.794 | LR 1.30e-06
+[2025-12-18 22:55:36] INFO - [Fold 4] Epoch 74/80 | Stage 2 | TrainLoss 5.2862 | ValLoss 8.5401 | WR2 0.6078 | R2_total 0.763 | R2_gdm 0.796 | LR 1.22e-06
+[2025-12-18 22:57:49] INFO - [Fold 4] Epoch 75/80 | Stage 2 | TrainLoss 5.2591 | ValLoss 8.5855 | WR2 0.6060 | R2_total 0.762 | R2_gdm 0.793 | LR 1.15e-06
+[2025-12-18 23:00:01] INFO - [Fold 4] Epoch 76/80 | Stage 2 | TrainLoss 5.1400 | ValLoss 8.5107 | WR2 0.6082 | R2_total 0.764 | R2_gdm 0.798 | LR 1.10e-06
+[2025-12-18 23:00:03] INFO - [Fold 4] 早停: 15 epochs 无改善
+[2025-12-18 23:00:03] INFO - [Fold 4] ✓ 训练历史已保存: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/Tile+FiLM/fold4_metrics.csv
+[2025-12-18 23:00:03] INFO - ================================================================================
+[2025-12-18 23:00:03] INFO - [Fold 4] 训练完成总结
+[2025-12-18 23:00:03] INFO -   最佳 WR2: 0.6135
+[2025-12-18 23:00:03] INFO -   最佳 Loss: 8.4169
+[2025-12-18 23:00:03] INFO -   Checkpoints: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/Tile+FiLM/checkpoints/fold4
+[2025-12-18 23:00:03] INFO - ================================================================================
+[2025-12-18 23:00:04] INFO - [Fold 4] SwanLab run 已结束
+[2025-12-18 23:00:04] INFO - ✓ Fold 4 训练完成
+[2025-12-18 23:00:05] INFO - ================================================================================
+[2025-12-18 23:00:05] INFO - 所有 Folds 训练完成！
+[2025-12-18 23:00:05] INFO - ================================================================================

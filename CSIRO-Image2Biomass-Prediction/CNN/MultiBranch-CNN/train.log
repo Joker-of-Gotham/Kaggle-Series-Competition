@@ -1,0 +1,264 @@
+[2025-12-23 08:33:11] INFO - Config saved to /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/MultiBranch-CNN/config.json
+[2025-12-23 08:33:11] INFO - ================================================================================
+[2025-12-23 08:33:11] INFO - === Multi-Branch CNN Training ===
+[2025-12-23 08:33:11] INFO - Device: cuda, Mixed Precision: True
+[2025-12-23 08:33:11] INFO - Experiment dir: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/MultiBranch-CNN
+[2025-12-23 08:33:11] INFO - Experts: ['convnextv2', 'internimage', 'unireplknet', 'repvit']
+[2025-12-23 08:33:11] INFO - Input Size: 384
+[2025-12-23 08:33:11] INFO - ================================================================================
+[2025-12-23 08:33:11] INFO - Dataset size: 357
+[2025-12-23 08:33:11] INFO - Training folds: [0, 1, 2, 3, 4], Resume Mode: auto
+[2025-12-23 08:33:11] INFO - ================================================================================
+[2025-12-23 08:33:11] INFO - Start Fold 0/4
+[2025-12-23 08:33:11] INFO - ================================================================================
+[2025-12-23 08:33:11] INFO - [Fold 0] Train: 285, Valid: 72
+[2025-12-23 08:33:15] INFO - ✅ Expert backbone (features): convnextv2_base.fcmae_ft_in1k | channels=[256, 512, 1024]
+[2025-12-23 08:33:19] INFO - ✅ Expert backbone (features): convnext_small.fb_in22k_ft_in1k | channels=[192, 384, 768]
+[2025-12-23 08:33:20] INFO - ✅ Expert backbone (features): repvit_m1 | channels=[96, 192, 384]
+[2025-12-23 08:33:21] INFO - ✅ Expert backbone (features): repvit_m1 | channels=[96, 192, 384]
+[2025-12-23 08:33:21] INFO - [Fold 0] Experts: ['convnextv2_base.fcmae_ft_in1k', 'convnext_small.fb_in22k_ft_in1k', 'repvit_m1', 'repvit_m1']
+[2025-12-23 08:33:21] INFO - [Fold 0] Params: total=161.77M, trainable=161.77M
+[2025-12-23 08:33:21] INFO - [Fold 0] Input size: 384x384
+[2025-12-23 08:33:21] INFO - [Fold 0] Using DataParallel: 2 GPUs
+[2025-12-23 08:33:23] INFO - [Fold 0] SwanLab run_id: gpd524s95adv004ibw9vh
+[2025-12-23 08:33:23] INFO - [Fold 0] Start training, epoch=1, stage=1
+[2025-12-23 08:41:17] INFO - [Fold 0] Epoch 1/130 | Stage 1 | TrainLoss 5.2666 | ValLoss 7.8553 | WR2 -1.4905 | R2_total -2.039 | R2_gdm -1.480 | LR 8.00e-04
+[2025-12-23 08:41:21] INFO - [Fold 0] New best WR2: -1.4905 (Epoch 1)
+[2025-12-23 08:41:22] INFO - [Fold 0] New best Loss: 7.8553 (Epoch 1)
+[2025-12-23 08:49:07] INFO - [Fold 0] Epoch 2/130 | Stage 1 | TrainLoss 4.3327 | ValLoss 7.8164 | WR2 -1.4720 | R2_total -2.013 | R2_gdm -1.462 | LR 8.00e-04
+[2025-12-23 08:49:12] INFO - [Fold 0] New best WR2: -1.4720 (Epoch 2)
+[2025-12-23 08:49:14] INFO - [Fold 0] New best Loss: 7.8164 (Epoch 2)
+[2025-12-23 08:56:59] INFO - [Fold 0] Epoch 3/130 | Stage 1 | TrainLoss 3.7235 | ValLoss 7.7598 | WR2 -1.4458 | R2_total -1.978 | R2_gdm -1.436 | LR 8.00e-04
+[2025-12-23 08:57:04] INFO - [Fold 0] New best WR2: -1.4458 (Epoch 3)
+[2025-12-23 08:57:07] INFO - [Fold 0] New best Loss: 7.7598 (Epoch 3)
+[2025-12-23 09:04:50] INFO - [Fold 0] Epoch 4/130 | Stage 1 | TrainLoss 3.7191 | ValLoss 7.6904 | WR2 -1.4141 | R2_total -1.934 | R2_gdm -1.405 | LR 8.00e-04
+[2025-12-23 09:04:55] INFO - [Fold 0] New best WR2: -1.4141 (Epoch 4)
+[2025-12-23 09:04:57] INFO - [Fold 0] New best Loss: 7.6904 (Epoch 4)
+[2025-12-23 09:12:45] INFO - [Fold 0] Epoch 5/130 | Stage 1 | TrainLoss 3.5825 | ValLoss 7.6116 | WR2 -1.3783 | R2_total -1.885 | R2_gdm -1.371 | LR 8.00e-04
+[2025-12-23 09:12:50] INFO - [Fold 0] New best WR2: -1.3783 (Epoch 5)
+[2025-12-23 09:12:52] INFO - [Fold 0] New best Loss: 7.6116 (Epoch 5)
+[2025-12-23 09:20:38] INFO - [Fold 0] Epoch 6/130 | Stage 1 | TrainLoss 3.3864 | ValLoss 7.5300 | WR2 -1.3413 | R2_total -1.834 | R2_gdm -1.336 | LR 8.00e-04
+[2025-12-23 09:20:43] INFO - [Fold 0] New best WR2: -1.3413 (Epoch 6)
+[2025-12-23 09:20:46] INFO - [Fold 0] New best Loss: 7.5300 (Epoch 6)
+[2025-12-23 09:28:34] INFO - [Fold 0] Epoch 7/130 | Stage 1 | TrainLoss 3.4428 | ValLoss 7.4584 | WR2 -1.3089 | R2_total -1.789 | R2_gdm -1.304 | LR 8.00e-04
+[2025-12-23 09:28:39] INFO - [Fold 0] New best WR2: -1.3089 (Epoch 7)
+[2025-12-23 09:28:41] INFO - [Fold 0] New best Loss: 7.4584 (Epoch 7)
+[2025-12-23 09:36:29] INFO - [Fold 0] Epoch 8/130 | Stage 1 | TrainLoss 3.3496 | ValLoss 7.3851 | WR2 -1.2758 | R2_total -1.744 | R2_gdm -1.271 | LR 8.00e-04
+[2025-12-23 09:36:35] INFO - [Fold 0] New best WR2: -1.2758 (Epoch 8)
+[2025-12-23 09:36:37] INFO - [Fold 0] New best Loss: 7.3851 (Epoch 8)
+[2025-12-23 09:44:25] INFO - [Fold 0] Epoch 9/130 | Stage 1 | TrainLoss 3.3570 | ValLoss 7.3207 | WR2 -1.2466 | R2_total -1.705 | R2_gdm -1.242 | LR 8.00e-04
+[2025-12-23 09:44:30] INFO - [Fold 0] New best WR2: -1.2466 (Epoch 9)
+[2025-12-23 09:44:32] INFO - [Fold 0] New best Loss: 7.3207 (Epoch 9)
+[2025-12-23 09:52:24] INFO - [Fold 0] Epoch 10/130 | Stage 1 | TrainLoss 2.9673 | ValLoss 7.2517 | WR2 -1.2146 | R2_total -1.662 | R2_gdm -1.209 | LR 8.00e-04
+[2025-12-23 09:52:29] INFO - [Fold 0] New best WR2: -1.2146 (Epoch 10)
+[2025-12-23 09:52:31] INFO - [Fold 0] New best Loss: 7.2517 (Epoch 10)
+[2025-12-23 10:00:20] INFO - [Fold 0] Epoch 11/130 | Stage 1 | TrainLoss 3.1023 | ValLoss 7.1837 | WR2 -1.1834 | R2_total -1.619 | R2_gdm -1.177 | LR 8.00e-04
+[2025-12-23 10:00:25] INFO - [Fold 0] New best WR2: -1.1834 (Epoch 11)
+[2025-12-23 10:00:28] INFO - [Fold 0] New best Loss: 7.1837 (Epoch 11)
+[2025-12-23 10:08:16] INFO - [Fold 0] Epoch 12/130 | Stage 1 | TrainLoss 3.3855 | ValLoss 7.1170 | WR2 -1.1530 | R2_total -1.579 | R2_gdm -1.145 | LR 8.00e-04
+[2025-12-23 10:08:21] INFO - [Fold 0] New best WR2: -1.1530 (Epoch 12)
+[2025-12-23 10:08:24] INFO - [Fold 0] New best Loss: 7.1170 (Epoch 12)
+[2025-12-23 10:16:09] INFO - [Fold 0] Epoch 13/130 | Stage 1 | TrainLoss 2.9694 | ValLoss 7.0552 | WR2 -1.1248 | R2_total -1.541 | R2_gdm -1.117 | LR 8.00e-04
+[2025-12-23 10:16:14] INFO - [Fold 0] New best WR2: -1.1248 (Epoch 13)
+[2025-12-23 10:16:17] INFO - [Fold 0] New best Loss: 7.0552 (Epoch 13)
+[2025-12-23 10:24:03] INFO - [Fold 0] Epoch 14/130 | Stage 1 | TrainLoss 3.3550 | ValLoss 7.0008 | WR2 -1.0998 | R2_total -1.508 | R2_gdm -1.091 | LR 8.00e-04
+[2025-12-23 10:24:09] INFO - [Fold 0] New best WR2: -1.0998 (Epoch 14)
+[2025-12-23 10:24:11] INFO - [Fold 0] New best Loss: 7.0008 (Epoch 14)
+[2025-12-23 10:32:01] INFO - [Fold 0] Epoch 15/130 | Stage 1 | TrainLoss 3.4520 | ValLoss 6.9449 | WR2 -1.0747 | R2_total -1.474 | R2_gdm -1.065 | LR 8.00e-04
+[2025-12-23 10:32:06] INFO - [Fold 0] New best WR2: -1.0747 (Epoch 15)
+[2025-12-23 10:32:08] INFO - [Fold 0] New best Loss: 6.9449 (Epoch 15)
+[2025-12-23 10:39:54] INFO - [Fold 0] Epoch 16/130 | Stage 1 | TrainLoss 3.5348 | ValLoss 6.8979 | WR2 -1.0548 | R2_total -1.448 | R2_gdm -1.044 | LR 8.00e-04
+[2025-12-23 10:39:59] INFO - [Fold 0] New best WR2: -1.0548 (Epoch 16)
+[2025-12-23 10:40:02] INFO - [Fold 0] New best Loss: 6.8979 (Epoch 16)
+[2025-12-23 10:47:49] INFO - [Fold 0] Epoch 17/130 | Stage 1 | TrainLoss 3.1277 | ValLoss 6.8486 | WR2 -1.0367 | R2_total -1.425 | R2_gdm -1.024 | LR 8.00e-04
+[2025-12-23 10:47:54] INFO - [Fold 0] New best WR2: -1.0367 (Epoch 17)
+[2025-12-23 10:47:57] INFO - [Fold 0] New best Loss: 6.8486 (Epoch 17)
+[2025-12-23 10:55:45] INFO - [Fold 0] Epoch 18/130 | Stage 1 | TrainLoss 3.2687 | ValLoss 6.7893 | WR2 -1.0175 | R2_total -1.399 | R2_gdm -1.003 | LR 8.00e-04
+[2025-12-23 10:55:50] INFO - [Fold 0] New best WR2: -1.0175 (Epoch 18)
+[2025-12-23 10:55:52] INFO - [Fold 0] New best Loss: 6.7893 (Epoch 18)
+[2025-12-23 11:03:40] INFO - [Fold 0] Epoch 19/130 | Stage 1 | TrainLoss 3.1449 | ValLoss 6.7262 | WR2 -0.9938 | R2_total -1.367 | R2_gdm -0.976 | LR 8.00e-04
+[2025-12-23 11:03:45] INFO - [Fold 0] New best WR2: -0.9938 (Epoch 19)
+[2025-12-23 11:03:48] INFO - [Fold 0] New best Loss: 6.7262 (Epoch 19)
+[2025-12-23 11:11:38] INFO - [Fold 0] Epoch 20/130 | Stage 1 | TrainLoss 3.1151 | ValLoss 6.6669 | WR2 -0.9682 | R2_total -1.334 | R2_gdm -0.948 | LR 8.00e-04
+[2025-12-23 11:11:43] INFO - [Fold 0] New best WR2: -0.9682 (Epoch 20)
+[2025-12-23 11:11:45] INFO - [Fold 0] New best Loss: 6.6669 (Epoch 20)
+[2025-12-23 11:19:35] INFO - [Fold 0] Epoch 21/130 | Stage 1 | TrainLoss 3.0705 | ValLoss 6.6158 | WR2 -0.9441 | R2_total -1.302 | R2_gdm -0.922 | LR 8.00e-04
+[2025-12-23 11:19:40] INFO - [Fold 0] New best WR2: -0.9441 (Epoch 21)
+[2025-12-23 11:19:42] INFO - [Fold 0] New best Loss: 6.6158 (Epoch 21)
+[2025-12-23 11:27:31] INFO - [Fold 0] Epoch 22/130 | Stage 1 | TrainLoss 3.2979 | ValLoss 6.5595 | WR2 -0.9159 | R2_total -1.264 | R2_gdm -0.893 | LR 8.00e-04
+[2025-12-23 11:27:36] INFO - [Fold 0] New best WR2: -0.9159 (Epoch 22)
+[2025-12-23 11:27:39] INFO - [Fold 0] New best Loss: 6.5595 (Epoch 22)
+[2025-12-23 11:35:26] INFO - [Fold 0] Epoch 23/130 | Stage 1 | TrainLoss 2.9632 | ValLoss 6.5205 | WR2 -0.8952 | R2_total -1.237 | R2_gdm -0.870 | LR 8.00e-04
+[2025-12-23 11:35:31] INFO - [Fold 0] New best WR2: -0.8952 (Epoch 23)
+[2025-12-23 11:35:33] INFO - [Fold 0] New best Loss: 6.5205 (Epoch 23)
+[2025-12-23 11:43:22] INFO - [Fold 0] Epoch 24/130 | Stage 1 | TrainLoss 3.0694 | ValLoss 6.4941 | WR2 -0.8786 | R2_total -1.214 | R2_gdm -0.854 | LR 8.00e-04
+[2025-12-23 11:43:27] INFO - [Fold 0] New best WR2: -0.8786 (Epoch 24)
+[2025-12-23 11:43:30] INFO - [Fold 0] New best Loss: 6.4941 (Epoch 24)
+[2025-12-23 11:51:18] INFO - [Fold 0] Epoch 25/130 | Stage 1 | TrainLoss 2.9423 | ValLoss 6.4677 | WR2 -0.8632 | R2_total -1.193 | R2_gdm -0.838 | LR 8.00e-04
+[2025-12-23 11:51:23] INFO - [Fold 0] New best WR2: -0.8632 (Epoch 25)
+[2025-12-23 11:51:25] INFO - [Fold 0] New best Loss: 6.4677 (Epoch 25)
+[2025-12-23 11:59:17] INFO - [Fold 0] Epoch 26/130 | Stage 1 | TrainLoss 2.7973 | ValLoss 6.4281 | WR2 -0.8432 | R2_total -1.166 | R2_gdm -0.817 | LR 8.00e-04
+[2025-12-23 11:59:22] INFO - [Fold 0] New best WR2: -0.8432 (Epoch 26)
+[2025-12-23 11:59:24] INFO - [Fold 0] New best Loss: 6.4281 (Epoch 26)
+[2025-12-23 12:07:14] INFO - [Fold 0] Epoch 27/130 | Stage 1 | TrainLoss 2.7966 | ValLoss 6.3743 | WR2 -0.8175 | R2_total -1.131 | R2_gdm -0.790 | LR 8.00e-04
+[2025-12-23 12:07:19] INFO - [Fold 0] New best WR2: -0.8175 (Epoch 27)
+[2025-12-23 12:07:22] INFO - [Fold 0] New best Loss: 6.3743 (Epoch 27)
+[2025-12-23 12:15:10] INFO - [Fold 0] Epoch 28/130 | Stage 1 | TrainLoss 2.7041 | ValLoss 6.3201 | WR2 -0.7935 | R2_total -1.099 | R2_gdm -0.763 | LR 8.00e-04
+[2025-12-23 12:15:15] INFO - [Fold 0] New best WR2: -0.7935 (Epoch 28)
+[2025-12-23 12:15:17] INFO - [Fold 0] New best Loss: 6.3201 (Epoch 28)
+[2025-12-23 12:23:09] INFO - [Fold 0] Epoch 29/130 | Stage 1 | TrainLoss 2.5886 | ValLoss 6.2646 | WR2 -0.7694 | R2_total -1.068 | R2_gdm -0.735 | LR 8.00e-04
+[2025-12-23 12:23:14] INFO - [Fold 0] New best WR2: -0.7694 (Epoch 29)
+[2025-12-23 12:23:16] INFO - [Fold 0] New best Loss: 6.2646 (Epoch 29)
+[2025-12-23 12:31:06] INFO - [Fold 0] Epoch 30/130 | Stage 1 | TrainLoss 2.9367 | ValLoss 6.2160 | WR2 -0.7507 | R2_total -1.044 | R2_gdm -0.712 | LR 8.00e-04
+[2025-12-23 12:31:11] INFO - [Fold 0] New best WR2: -0.7507 (Epoch 30)
+[2025-12-23 12:31:13] INFO - [Fold 0] New best Loss: 6.2160 (Epoch 30)
+[2025-12-23 12:31:13] INFO - [Fold 0] Switch to Stage 2
+[2025-12-23 12:39:43] INFO - [Fold 0] Epoch 31/130 | Stage 2 | TrainLoss 2.9053 | ValLoss 6.1571 | WR2 -0.7273 | R2_total -1.013 | R2_gdm -0.685 | LR 4.00e-05
+[2025-12-23 12:39:52] INFO - [Fold 0] New best WR2: -0.7273 (Epoch 31)
+[2025-12-23 12:39:56] INFO - [Fold 0] New best Loss: 6.1571 (Epoch 31)
+[2025-12-23 12:48:13] INFO - [Fold 0] Epoch 32/130 | Stage 2 | TrainLoss 2.9134 | ValLoss 6.1165 | WR2 -0.7149 | R2_total -0.996 | R2_gdm -0.671 | LR 4.00e-05
+[2025-12-23 12:48:21] INFO - [Fold 0] New best WR2: -0.7149 (Epoch 32)
+[2025-12-23 12:48:25] INFO - [Fold 0] New best Loss: 6.1165 (Epoch 32)
+[2025-12-23 12:56:36] INFO - [Fold 0] Epoch 33/130 | Stage 2 | TrainLoss 2.8509 | ValLoss 6.0691 | WR2 -0.6968 | R2_total -0.971 | R2_gdm -0.651 | LR 3.99e-05
+[2025-12-23 12:56:44] INFO - [Fold 0] New best WR2: -0.6968 (Epoch 33)
+[2025-12-23 12:56:48] INFO - [Fold 0] New best Loss: 6.0691 (Epoch 33)
+[2025-12-23 13:05:00] INFO - [Fold 0] Epoch 34/130 | Stage 2 | TrainLoss 2.7041 | ValLoss 6.0094 | WR2 -0.6722 | R2_total -0.938 | R2_gdm -0.622 | LR 3.99e-05
+[2025-12-23 13:05:08] INFO - [Fold 0] New best WR2: -0.6722 (Epoch 34)
+[2025-12-23 13:05:12] INFO - [Fold 0] New best Loss: 6.0094 (Epoch 34)
+[2025-12-23 13:13:30] INFO - [Fold 0] Epoch 35/130 | Stage 2 | TrainLoss 2.6818 | ValLoss 5.9439 | WR2 -0.6453 | R2_total -0.903 | R2_gdm -0.590 | LR 3.98e-05
+[2025-12-23 13:13:38] INFO - [Fold 0] New best WR2: -0.6453 (Epoch 35)
+[2025-12-23 13:13:42] INFO - [Fold 0] New best Loss: 5.9439 (Epoch 35)
+[2025-12-23 13:21:52] INFO - [Fold 0] Epoch 36/130 | Stage 2 | TrainLoss 2.7385 | ValLoss 5.8685 | WR2 -0.6134 | R2_total -0.861 | R2_gdm -0.554 | LR 3.97e-05
+[2025-12-23 13:22:00] INFO - [Fold 0] New best WR2: -0.6134 (Epoch 36)
+[2025-12-23 13:22:04] INFO - [Fold 0] New best Loss: 5.8685 (Epoch 36)
+[2025-12-23 13:30:10] INFO - [Fold 0] Epoch 37/130 | Stage 2 | TrainLoss 2.7605 | ValLoss 5.7932 | WR2 -0.5807 | R2_total -0.819 | R2_gdm -0.514 | LR 3.96e-05
+[2025-12-23 13:30:18] INFO - [Fold 0] New best WR2: -0.5807 (Epoch 37)
+[2025-12-23 13:30:22] INFO - [Fold 0] New best Loss: 5.7932 (Epoch 37)
+[2025-12-23 13:38:29] INFO - [Fold 0] Epoch 38/130 | Stage 2 | TrainLoss 2.6427 | ValLoss 5.7215 | WR2 -0.5483 | R2_total -0.777 | R2_gdm -0.477 | LR 3.94e-05
+[2025-12-23 13:38:36] INFO - [Fold 0] New best WR2: -0.5483 (Epoch 38)
+[2025-12-23 13:38:40] INFO - [Fold 0] New best Loss: 5.7215 (Epoch 38)
+[2025-12-23 13:46:49] INFO - [Fold 0] Epoch 39/130 | Stage 2 | TrainLoss 2.6427 | ValLoss 5.6430 | WR2 -0.5161 | R2_total -0.734 | R2_gdm -0.442 | LR 3.93e-05
+[2025-12-23 13:46:57] INFO - [Fold 0] New best WR2: -0.5161 (Epoch 39)
+[2025-12-23 13:47:01] INFO - [Fold 0] New best Loss: 5.6430 (Epoch 39)
+[2025-12-23 13:55:09] INFO - [Fold 0] Epoch 40/130 | Stage 2 | TrainLoss 2.6577 | ValLoss 5.5750 | WR2 -0.4908 | R2_total -0.699 | R2_gdm -0.417 | LR 3.91e-05
+[2025-12-23 13:55:17] INFO - [Fold 0] New best WR2: -0.4908 (Epoch 40)
+[2025-12-23 13:55:21] INFO - [Fold 0] New best Loss: 5.5750 (Epoch 40)
+[2025-12-23 14:03:28] INFO - [Fold 0] Epoch 41/130 | Stage 2 | TrainLoss 2.6543 | ValLoss 5.5017 | WR2 -0.4621 | R2_total -0.661 | R2_gdm -0.388 | LR 3.89e-05
+[2025-12-23 14:03:36] INFO - [Fold 0] New best WR2: -0.4621 (Epoch 41)
+[2025-12-23 14:03:39] INFO - [Fold 0] New best Loss: 5.5017 (Epoch 41)
+[2025-12-23 14:11:51] INFO - [Fold 0] Epoch 42/130 | Stage 2 | TrainLoss 2.5393 | ValLoss 5.4237 | WR2 -0.4307 | R2_total -0.619 | R2_gdm -0.353 | LR 3.87e-05
+[2025-12-23 14:11:59] INFO - [Fold 0] New best WR2: -0.4307 (Epoch 42)
+[2025-12-23 14:12:02] INFO - [Fold 0] New best Loss: 5.4237 (Epoch 42)
+[2025-12-23 14:20:08] INFO - [Fold 0] Epoch 43/130 | Stage 2 | TrainLoss 2.5376 | ValLoss 5.3513 | WR2 -0.4027 | R2_total -0.582 | R2_gdm -0.320 | LR 3.85e-05
+[2025-12-23 14:20:16] INFO - [Fold 0] New best WR2: -0.4027 (Epoch 43)
+[2025-12-23 14:20:20] INFO - [Fold 0] New best Loss: 5.3513 (Epoch 43)
+[2025-12-23 14:28:29] INFO - [Fold 0] Epoch 44/130 | Stage 2 | TrainLoss 2.5242 | ValLoss 5.2787 | WR2 -0.3732 | R2_total -0.544 | R2_gdm -0.286 | LR 3.83e-05
+[2025-12-23 14:28:37] INFO - [Fold 0] New best WR2: -0.3732 (Epoch 44)
+[2025-12-23 14:28:41] INFO - [Fold 0] New best Loss: 5.2787 (Epoch 44)
+[2025-12-23 14:36:49] INFO - [Fold 0] Epoch 45/130 | Stage 2 | TrainLoss 2.4417 | ValLoss 5.1983 | WR2 -0.3431 | R2_total -0.504 | R2_gdm -0.254 | LR 3.80e-05
+[2025-12-23 14:36:57] INFO - [Fold 0] New best WR2: -0.3431 (Epoch 45)
+[2025-12-23 14:37:01] INFO - [Fold 0] New best Loss: 5.1983 (Epoch 45)
+[2025-12-23 14:45:13] INFO - [Fold 0] Epoch 46/130 | Stage 2 | TrainLoss 2.5086 | ValLoss 5.1280 | WR2 -0.3157 | R2_total -0.468 | R2_gdm -0.224 | LR 3.78e-05
+[2025-12-23 14:45:21] INFO - [Fold 0] New best WR2: -0.3157 (Epoch 46)
+[2025-12-23 14:45:25] INFO - [Fold 0] New best Loss: 5.1280 (Epoch 46)
+[2025-12-23 14:53:32] INFO - [Fold 0] Epoch 47/130 | Stage 2 | TrainLoss 2.4991 | ValLoss 5.0584 | WR2 -0.2878 | R2_total -0.431 | R2_gdm -0.193 | LR 3.75e-05
+[2025-12-23 14:53:40] INFO - [Fold 0] New best WR2: -0.2878 (Epoch 47)
+[2025-12-23 14:53:43] INFO - [Fold 0] New best Loss: 5.0584 (Epoch 47)
+[2025-12-23 15:02:00] INFO - [Fold 0] Epoch 48/130 | Stage 2 | TrainLoss 2.4772 | ValLoss 4.9827 | WR2 -0.2602 | R2_total -0.394 | R2_gdm -0.162 | LR 3.72e-05
+[2025-12-23 15:02:07] INFO - [Fold 0] New best WR2: -0.2602 (Epoch 48)
+[2025-12-23 15:02:11] INFO - [Fold 0] New best Loss: 4.9827 (Epoch 48)
+[2025-12-23 15:10:30] INFO - [Fold 0] Epoch 49/130 | Stage 2 | TrainLoss 2.4501 | ValLoss 4.9058 | WR2 -0.2327 | R2_total -0.358 | R2_gdm -0.130 | LR 3.69e-05
+[2025-12-23 15:10:37] INFO - [Fold 0] New best WR2: -0.2327 (Epoch 49)
+[2025-12-23 15:10:41] INFO - [Fold 0] New best Loss: 4.9058 (Epoch 49)
+[2025-12-23 15:18:59] INFO - [Fold 0] Epoch 50/130 | Stage 2 | TrainLoss 2.4088 | ValLoss 4.8280 | WR2 -0.2041 | R2_total -0.321 | R2_gdm -0.096 | LR 3.66e-05
+[2025-12-23 15:19:07] INFO - [Fold 0] New best WR2: -0.2041 (Epoch 50)
+[2025-12-23 15:19:11] INFO - [Fold 0] New best Loss: 4.8280 (Epoch 50)
+[2025-12-23 15:27:28] INFO - [Fold 0] Epoch 51/130 | Stage 2 | TrainLoss 2.3536 | ValLoss 4.7549 | WR2 -0.1783 | R2_total -0.286 | R2_gdm -0.066 | LR 3.62e-05
+[2025-12-23 15:27:35] INFO - [Fold 0] New best WR2: -0.1783 (Epoch 51)
+[2025-12-23 15:27:39] INFO - [Fold 0] New best Loss: 4.7549 (Epoch 51)
+[2025-12-23 15:35:51] INFO - [Fold 0] Epoch 52/130 | Stage 2 | TrainLoss 2.4710 | ValLoss 4.6831 | WR2 -0.1542 | R2_total -0.253 | R2_gdm -0.036 | LR 3.59e-05
+[2025-12-23 15:36:00] INFO - [Fold 0] New best WR2: -0.1542 (Epoch 52)
+[2025-12-23 15:36:04] INFO - [Fold 0] New best Loss: 4.6831 (Epoch 52)
+[2025-12-23 15:44:17] INFO - [Fold 0] Epoch 53/130 | Stage 2 | TrainLoss 2.3750 | ValLoss 4.5954 | WR2 -0.1238 | R2_total -0.213 | R2_gdm 0.003 | LR 3.55e-05
+[2025-12-23 15:44:24] INFO - [Fold 0] New best WR2: -0.1238 (Epoch 53)
+[2025-12-23 15:44:28] INFO - [Fold 0] New best Loss: 4.5954 (Epoch 53)
+[2025-12-23 15:52:45] INFO - [Fold 0] Epoch 54/130 | Stage 2 | TrainLoss 2.3573 | ValLoss 4.5047 | WR2 -0.0901 | R2_total -0.169 | R2_gdm 0.048 | LR 3.51e-05
+[2025-12-23 15:52:53] INFO - [Fold 0] New best WR2: -0.0901 (Epoch 54)
+[2025-12-23 15:52:57] INFO - [Fold 0] New best Loss: 4.5047 (Epoch 54)
+[2025-12-23 16:01:15] INFO - [Fold 0] Epoch 55/130 | Stage 2 | TrainLoss 2.6283 | ValLoss 4.4097 | WR2 -0.0511 | R2_total -0.118 | R2_gdm 0.095 | LR 3.47e-05
+[2025-12-23 16:01:23] INFO - [Fold 0] New best WR2: -0.0511 (Epoch 55)
+[2025-12-23 16:01:26] INFO - [Fold 0] New best Loss: 4.4097 (Epoch 55)
+[2025-12-23 16:09:34] INFO - [Fold 0] Epoch 56/130 | Stage 2 | TrainLoss 2.2659 | ValLoss 4.3278 | WR2 -0.0229 | R2_total -0.081 | R2_gdm 0.128 | LR 3.43e-05
+[2025-12-23 16:09:41] INFO - [Fold 0] New best WR2: -0.0229 (Epoch 56)
+[2025-12-23 16:09:45] INFO - [Fold 0] New best Loss: 4.3278 (Epoch 56)
+[2025-12-23 16:18:05] INFO - [Fold 0] Epoch 57/130 | Stage 2 | TrainLoss 2.4046 | ValLoss 4.2579 | WR2 0.0009 | R2_total -0.050 | R2_gdm 0.156 | LR 3.39e-05
+[2025-12-23 16:18:13] INFO - [Fold 0] New best WR2: 0.0009 (Epoch 57)
+[2025-12-23 16:18:17] INFO - [Fold 0] New best Loss: 4.2579 (Epoch 57)
+[2025-12-23 16:26:33] INFO - [Fold 0] Epoch 58/130 | Stage 2 | TrainLoss 2.4904 | ValLoss 4.1879 | WR2 0.0234 | R2_total -0.021 | R2_gdm 0.182 | LR 3.35e-05
+[2025-12-23 16:26:40] INFO - [Fold 0] New best WR2: 0.0234 (Epoch 58)
+[2025-12-23 16:26:44] INFO - [Fold 0] New best Loss: 4.1879 (Epoch 58)
+[2025-12-23 16:34:55] INFO - [Fold 0] Epoch 59/130 | Stage 2 | TrainLoss 2.4348 | ValLoss 4.1295 | WR2 0.0435 | R2_total 0.006 | R2_gdm 0.206 | LR 3.30e-05
+[2025-12-23 16:35:03] INFO - [Fold 0] New best WR2: 0.0435 (Epoch 59)
+[2025-12-23 16:35:07] INFO - [Fold 0] New best Loss: 4.1295 (Epoch 59)
+[2025-12-23 16:43:25] INFO - [Fold 0] Epoch 60/130 | Stage 2 | TrainLoss 2.4672 | ValLoss 4.0563 | WR2 0.0674 | R2_total 0.038 | R2_gdm 0.234 | LR 3.26e-05
+[2025-12-23 16:43:33] INFO - [Fold 0] New best WR2: 0.0674 (Epoch 60)
+[2025-12-23 16:43:37] INFO - [Fold 0] New best Loss: 4.0563 (Epoch 60)
+[2025-12-23 16:51:45] INFO - [Fold 0] Epoch 61/130 | Stage 2 | TrainLoss 2.4567 | ValLoss 3.9941 | WR2 0.0867 | R2_total 0.064 | R2_gdm 0.254 | LR 3.21e-05
+[2025-12-23 16:51:53] INFO - [Fold 0] New best WR2: 0.0867 (Epoch 61)
+[2025-12-23 16:51:57] INFO - [Fold 0] New best Loss: 3.9941 (Epoch 61)
+[2025-12-23 17:00:11] INFO - [Fold 0] Epoch 62/130 | Stage 2 | TrainLoss 2.4329 | ValLoss 3.9278 | WR2 0.1070 | R2_total 0.091 | R2_gdm 0.275 | LR 3.16e-05
+[2025-12-23 17:00:18] INFO - [Fold 0] New best WR2: 0.1070 (Epoch 62)
+[2025-12-23 17:00:22] INFO - [Fold 0] New best Loss: 3.9278 (Epoch 62)
+[2025-12-23 17:08:38] INFO - [Fold 0] Epoch 63/130 | Stage 2 | TrainLoss 2.4091 | ValLoss 3.8852 | WR2 0.1181 | R2_total 0.107 | R2_gdm 0.284 | LR 3.12e-05
+[2025-12-23 17:08:46] INFO - [Fold 0] New best WR2: 0.1181 (Epoch 63)
+[2025-12-23 17:08:50] INFO - [Fold 0] New best Loss: 3.8852 (Epoch 63)
+[2025-12-23 17:17:04] INFO - [Fold 0] Epoch 64/130 | Stage 2 | TrainLoss 3.0382 | ValLoss 3.8749 | WR2 0.1178 | R2_total 0.108 | R2_gdm 0.280 | LR 3.07e-05
+[2025-12-23 17:17:12] INFO - [Fold 0] New best Loss: 3.8749 (Epoch 64)
+[2025-12-23 17:25:20] INFO - [Fold 0] Epoch 65/130 | Stage 2 | TrainLoss 3.3443 | ValLoss 3.9349 | WR2 0.0962 | R2_total 0.081 | R2_gdm 0.249 | LR 3.02e-05
+[2025-12-23 17:33:32] INFO - [Fold 0] Epoch 66/130 | Stage 2 | TrainLoss 3.2266 | ValLoss 4.0383 | WR2 0.0681 | R2_total 0.045 | R2_gdm 0.213 | LR 2.97e-05
+[2025-12-23 17:41:44] INFO - [Fold 0] Epoch 67/130 | Stage 2 | TrainLoss 3.2101 | ValLoss 4.1604 | WR2 0.0311 | R2_total -0.004 | R2_gdm 0.167 | LR 2.91e-05
+[2025-12-23 17:49:54] INFO - [Fold 0] Epoch 68/130 | Stage 2 | TrainLoss 2.9965 | ValLoss 4.2487 | WR2 0.0033 | R2_total -0.040 | R2_gdm 0.131 | LR 2.86e-05
+[2025-12-23 17:58:11] INFO - [Fold 0] Epoch 69/130 | Stage 2 | TrainLoss 2.9998 | ValLoss 4.3120 | WR2 -0.0093 | R2_total -0.057 | R2_gdm 0.114 | LR 2.81e-05
+[2025-12-23 18:06:24] INFO - [Fold 0] Epoch 70/130 | Stage 2 | TrainLoss 3.0599 | ValLoss 4.3813 | WR2 -0.0306 | R2_total -0.085 | R2_gdm 0.086 | LR 2.76e-05
+[2025-12-23 18:14:44] INFO - [Fold 0] Epoch 71/130 | Stage 2 | TrainLoss 3.4791 | ValLoss 4.4731 | WR2 -0.0647 | R2_total -0.128 | R2_gdm 0.046 | LR 2.70e-05
+[2025-12-23 18:23:01] INFO - [Fold 0] Epoch 72/130 | Stage 2 | TrainLoss 2.9186 | ValLoss 4.5090 | WR2 -0.0799 | R2_total -0.148 | R2_gdm 0.030 | LR 2.65e-05
+[2025-12-23 18:31:11] INFO - [Fold 0] Epoch 73/130 | Stage 2 | TrainLoss 2.7776 | ValLoss 4.5116 | WR2 -0.0820 | R2_total -0.149 | R2_gdm 0.023 | LR 2.59e-05
+[2025-12-23 18:39:22] INFO - [Fold 0] Epoch 74/130 | Stage 2 | TrainLoss 2.8776 | ValLoss 4.5144 | WR2 -0.0826 | R2_total -0.150 | R2_gdm 0.027 | LR 2.54e-05
+[2025-12-23 18:47:35] INFO - [Fold 0] Epoch 75/130 | Stage 2 | TrainLoss 2.7408 | ValLoss 4.4941 | WR2 -0.0788 | R2_total -0.148 | R2_gdm 0.038 | LR 2.48e-05
+[2025-12-23 18:55:57] INFO - [Fold 0] Epoch 76/130 | Stage 2 | TrainLoss 2.8544 | ValLoss 4.4538 | WR2 -0.0656 | R2_total -0.131 | R2_gdm 0.055 | LR 2.43e-05
+[2025-12-23 19:04:11] INFO - [Fold 0] Epoch 77/130 | Stage 2 | TrainLoss 2.7643 | ValLoss 4.4211 | WR2 -0.0497 | R2_total -0.108 | R2_gdm 0.069 | LR 2.37e-05
+[2025-12-23 19:12:24] INFO - [Fold 0] Epoch 78/130 | Stage 2 | TrainLoss 2.7946 | ValLoss 4.3546 | WR2 -0.0307 | R2_total -0.081 | R2_gdm 0.090 | LR 2.31e-05
+[2025-12-23 19:20:38] INFO - [Fold 0] Epoch 79/130 | Stage 2 | TrainLoss 2.7046 | ValLoss 4.3164 | WR2 -0.0262 | R2_total -0.073 | R2_gdm 0.096 | LR 2.26e-05
+[2025-12-23 19:28:54] INFO - [Fold 0] Epoch 80/130 | Stage 2 | TrainLoss 2.6313 | ValLoss 4.2829 | WR2 -0.0251 | R2_total -0.069 | R2_gdm 0.092 | LR 2.20e-05
+[2025-12-23 19:37:10] INFO - [Fold 0] Epoch 81/130 | Stage 2 | TrainLoss 2.6757 | ValLoss 4.2134 | WR2 -0.0055 | R2_total -0.041 | R2_gdm 0.111 | LR 2.14e-05
+[2025-12-23 19:45:25] INFO - [Fold 0] Epoch 82/130 | Stage 2 | TrainLoss 2.7134 | ValLoss 4.1429 | WR2 0.0144 | R2_total -0.015 | R2_gdm 0.137 | LR 2.09e-05
+[2025-12-23 19:53:39] INFO - [Fold 0] Epoch 83/130 | Stage 2 | TrainLoss 2.5983 | ValLoss 4.0806 | WR2 0.0386 | R2_total 0.016 | R2_gdm 0.168 | LR 2.03e-05
+[2025-12-23 19:53:44] INFO - [Fold 0] Early stop: 20 epochs without improvement
+[2025-12-23 19:53:44] INFO - [Fold 0] History saved: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/MultiBranch-CNN/fold0_metrics.csv
+[2025-12-23 19:53:44] INFO - ================================================================================
+[2025-12-23 19:53:44] INFO - [Fold 0] Training summary
+[2025-12-23 19:53:44] INFO -   Best WR2: 0.1181
+[2025-12-23 19:53:44] INFO -   Best Loss: 3.8749
+[2025-12-23 19:53:44] INFO -   Checkpoints: /home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/MultiBranch-CNN/checkpoints/fold0
+[2025-12-23 19:53:44] INFO - ================================================================================
+[2025-12-23 19:53:45] INFO - [Fold 0] SwanLab run finished
+[2025-12-23 19:53:45] INFO - ✓ Fold 0 done
+[2025-12-23 19:53:46] INFO - Wait 3 seconds for next fold...
+[2025-12-23 19:53:49] INFO - ================================================================================
+[2025-12-23 19:53:49] INFO - Start Fold 1/4
+[2025-12-23 19:53:49] INFO - ================================================================================
+[2025-12-23 19:53:49] INFO - [Fold 1] Train: 285, Valid: 72
+[2025-12-23 19:53:52] INFO - ✅ Expert backbone (features): convnextv2_base.fcmae_ft_in1k | channels=[256, 512, 1024]
+[2025-12-23 19:53:56] INFO - ✅ Expert backbone (features): convnext_small.fb_in22k_ft_in1k | channels=[192, 384, 768]
+[2025-12-23 19:53:56] INFO - ✅ Expert backbone (features): repvit_m1 | channels=[96, 192, 384]
+[2025-12-23 19:53:57] INFO - ✅ Expert backbone (features): repvit_m1 | channels=[96, 192, 384]
+[2025-12-23 19:53:57] INFO - [Fold 1] Experts: ['convnextv2_base.fcmae_ft_in1k', 'convnext_small.fb_in22k_ft_in1k', 'repvit_m1', 'repvit_m1']
+[2025-12-23 19:53:57] INFO - [Fold 1] Params: total=161.77M, trainable=161.77M
+[2025-12-23 19:53:57] INFO - [Fold 1] Input size: 384x384
+[2025-12-23 19:53:57] INFO - [Fold 1] Using DataParallel: 2 GPUs
+[2025-12-23 19:54:02] INFO - [Fold 1] SwanLab run_id: u99zvmy3cmcm6idzvx70j
+[2025-12-23 19:54:02] INFO - [Fold 1] Start training, epoch=1, stage=1
+[2025-12-23 20:02:05] INFO - [Fold 1] Epoch 1/130 | Stage 1 | TrainLoss 5.2493 | ValLoss 7.5656 | WR2 -2.0454 | R2_total -2.763 | R2_gdm -2.079 | LR 8.00e-04
+[2025-12-23 20:02:09] INFO - [Fold 1] New best WR2: -2.0454 (Epoch 1)
+[2025-12-23 20:02:11] INFO - [Fold 1] New best Loss: 7.5656 (Epoch 1)
+[2025-12-23 20:05:38] WARNING - Fold 1 interrupted

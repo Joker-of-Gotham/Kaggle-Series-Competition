@@ -1,0 +1,102 @@
+{
+  "seed": 42,
+  "data_path": "/home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/csiro-biomass",
+  "train_csv_path": "/home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/csiro-biomass/train.csv",
+  "image_dir": "/home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/csiro-biomass/train",
+  "experiment_dir": "/home/aaa/Kaggle-Series-Competition/CSIRO-Image2Biomass-Prediction/CNN/MultiBranch-CNN",
+  "n_splits": 5,
+  "stratify_col": "Dry_Total_g",
+  "stratify_bins": 10,
+  "epochs": 130,
+  "freeze_epochs": 30,
+  "batch_size": 4,
+  "num_workers": 4,
+  "grad_accum": 2,
+  "lr_backbone": 4e-05,
+  "lr_head": 0.0008,
+  "weight_decay": 0.0025,
+  "mixed_precision": true,
+  "patience": 20,
+  "input_size": 384,
+  "d_model": 512,
+  "n_heads": 8,
+  "n_layers": 3,
+  "mlp_ratio": 4.0,
+  "dropout": 0.2,
+  "hidden_ratio": 0.5,
+  "num_scales": 3,
+  "use_meta_token": true,
+  "meta_embed_dim": 48,
+  "meta_dropout": 0.1,
+  "expert_drop_path_max": 0.35,
+  "expert_drop_warmup": 20,
+  "aux_loss_weight": 0.2,
+  "use_ema": true,
+  "ema_decay": 0.999,
+  "use_ema_eval": true,
+  "expert_configs": [
+    {
+      "name": "convnextv2",
+      "candidates": [
+        "convnextv2_base.fcmae_ft_in1k",
+        "convnextv2_base",
+        "convnext_base.fb_in22k_ft_in1k",
+        "convnext_small.fb_in22k_ft_in1k",
+        "resnet50.a1_in1k"
+      ],
+      "aug": "mild"
+    },
+    {
+      "name": "internimage",
+      "candidates": [
+        "internimage_t_1k_224",
+        "internimage_s_1k_224",
+        "convnext_small.fb_in22k_ft_in1k",
+        "resnet50.a1_in1k"
+      ],
+      "aug": "geo"
+    },
+    {
+      "name": "unireplknet",
+      "candidates": [
+        "unireplknet_base",
+        "unireplknet_tiny",
+        "repvit_m1",
+        "efficientnetv2_rw_s.ra2_in1k"
+      ],
+      "aug": "blur"
+    },
+    {
+      "name": "repvit",
+      "candidates": [
+        "repvit_m1",
+        "repvit_m2",
+        "fasternet_s",
+        "mobilenetv3_large_100"
+      ],
+      "aug": "strong"
+    }
+  ],
+  "ALL_TARGET_COLS": [
+    "Dry_Green_g",
+    "Dry_Dead_g",
+    "Dry_Clover_g",
+    "GDM_g",
+    "Dry_Total_g"
+  ],
+  "METRIC_WEIGHTS": {
+    "Dry_Green_g": 0.1,
+    "Dry_Dead_g": 0.1,
+    "Dry_Clover_g": 0.1,
+    "GDM_g": 0.2,
+    "Dry_Total_g": 0.5
+  },
+  "project": "csiro-img2biomass",
+  "experiment_name": "cnn_multibranch",
+  "log_image_every": 5,
+  "log_image_limit": 2,
+  "log_attn_every": 5,
+  "save_history_csv": true,
+  "device": "cuda",
+  "git_commit": "183053f5"
+}
