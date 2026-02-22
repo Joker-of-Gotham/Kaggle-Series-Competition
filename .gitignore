@@ -49,6 +49,7 @@ CSIRO-Image2Biomass-Prediction/image-processor/preprocessed_images
 *.rar
 *.bz2
 *.xz
+*.csv
 
 # 如需保留小样本，可在需要时取消注释
 # !**/data/sample*/
